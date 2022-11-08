@@ -284,34 +284,31 @@ namespace NetrayaDashboard
 
         private void panelColor(Panel panel, string lineSection)
         {
-            if (lineSection.Contains("PROD"))
+            switch (lineSection)
             {
-                panel.BackColor = Color.DeepSkyBlue;
+                case "PROD":
+                    panel.BackColor = Color.DeepSkyBlue;
+                    break;
+                case "PE":
+                    panel.BackColor = Color.Blue;
+                    break;
+                case "MGR":
+                    panel.BackColor = Color.Gray;
+                    break;
+                case "ENG":
+                    panel.BackColor = Color.LightSeaGreen;
+                    break;
+                case "PC":
+                    panel.BackColor = Color.MediumPurple;
+                    break;
+                case "QC":
+                    panel.BackColor = Color.HotPink;
+                    break;
+                case "STORE":
+                    panel.BackColor = Color.Salmon;
+                    break;
             }
-            if (lineSection.Contains("PE"))
-            {
-                panel.BackColor = Color.Blue;
-            }
-            if (lineSection.Contains("MGR"))
-            {
-                panel.BackColor = Color.Gray;
-            }
-            if (lineSection.Contains("ENG"))
-            {
-                panel.BackColor = Color.LightSeaGreen;
-            }
-            if (lineSection.Contains("PC"))
-            {
-                panel.BackColor = Color.MediumPurple;
-            }
-            if (lineSection.Contains("QC"))
-            {
-                panel.BackColor = Color.HotPink;
-            }
-            if (lineSection.Contains("STORE"))
-            {
-                panel.BackColor = Color.Salmon;
-            }
+
         }
     }
 }

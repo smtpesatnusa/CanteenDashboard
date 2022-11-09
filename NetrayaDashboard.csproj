@@ -110,6 +110,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMains.Designer.cs">
+      <DependentUpon>FormMains.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     <Compile Include="Setup\Helper.cs" />
     <Compile Include="Setup\MessagesHelper.cs" />
     <Compile Include="Setup\QueryLibrary.cs" />
+    <EmbeddedResource Include="FormMains.resx">
+      <DependentUpon>FormMains.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -150,6 +160,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\overdue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\employee\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

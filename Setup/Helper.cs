@@ -598,7 +598,7 @@ namespace NetrayaDashboard
             }
             else
             {
-                dgv.ColumnHeadersVisible = true;
+                //dgv.ColumnHeadersVisible = true;
             }
         }
 

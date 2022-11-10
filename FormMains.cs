@@ -40,13 +40,14 @@ namespace NetrayaDashboard
                 dateTimeNow.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
                 timeNow.Text = DateTime.Now.ToString("HH:mm");
 
-                string queryTotalOntime = "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE' OR a.ipDevice = 'SMT-MAINOUT') AND(a.indicator = 'In' OR a.indicator = 'In/Out') " +
-                    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";                  
-                                        
-                    //"SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                    //"WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
-                    //"GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
+                string queryTotalOntime =
+                    "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
+                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
+                    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
+
+                //"SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
+                //    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE' OR a.ipDevice = 'SMT-MAINOUT') AND(a.indicator = 'In' OR a.indicator = 'In/Out') " +
+                //    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
 
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryTotalOntime, myConn))
                 {
@@ -64,8 +65,8 @@ namespace NetrayaDashboard
                             section1 = dt.Rows[0]["section"].ToString();
                             time1 = Convert.ToDateTime(dt.Rows[0]["timelog"].ToString()).ToString("HH:mm"); ;
                             namePanel1.Text = elipsisText(employee1);
-                            //badgeId1.Text = badge1;
-                            //linesection1.Text = lineCode1 + " (" + section1 + ")";
+                            badgeId1.Text = badge1;
+                            linesection1.Text = lineCode1 + " (" + section1 + ")";
                             clockIn1.Text = time1;
                             panelColor(panel2, section1);
                         }

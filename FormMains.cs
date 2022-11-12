@@ -42,12 +42,13 @@ namespace NetrayaDashboard
 
                 string queryTotalOntime =
                     "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
-                    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
+                        "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE' OR a.ipDevice = 'SMT-MAINOUT') AND(a.indicator = 'In' OR a.indicator = 'In/Out') " +
+                        "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
 
                 //"SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                //    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE' OR a.ipDevice = 'SMT-MAINOUT') AND(a.indicator = 'In' OR a.indicator = 'In/Out') " +
+                //    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
                 //    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
+                               
 
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryTotalOntime, myConn))
                 {

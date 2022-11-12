@@ -249,6 +249,7 @@ namespace NetrayaDashboard
             this.panel16.Controls.Add(this.label26);
             this.panel16.Controls.Add(this.linesection15);
             this.panel16.Controls.Add(this.namePanel15);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel16.Location = new System.Drawing.Point(1035, 371);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(256, 180);

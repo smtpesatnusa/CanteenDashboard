@@ -7,17 +7,18 @@ using System.Windows.Forms;
 
 namespace NetrayaDashboard
 {
-    public partial class FormMains : MaterialForm
+    public partial class FormMainNine : MaterialForm
     {
         MySqlConnection myConn;
+        string queryAbsent;
 
-        string employee1, employee2, employee3, employee4, employee5, employee6, employee7, employee8, employee9, employee10, employee11, employee12, employee13, employee14, employee15;
-        string badge1, badge2, badge3, badge4, badge5, badge6, badge7, badge8, badge9, badge10, badge11, badge12, badge13, badge14, badge15;
-        string lineCode1, lineCode2, lineCode3, lineCode4, lineCode5, lineCode6, lineCode7, lineCode8, lineCode9, lineCode10, lineCode11, lineCode12, lineCode13, lineCode14, lineCode15;
-        string section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12, section13, section14, section15;
-        string time1, time2, time3, time4, time5, time6, time7, time8, time9, time10, time11, time12, time13, time14, time15;
+        string employee1, employee2, employee3, employee4, employee5, employee6, employee7, employee8, employee9;
+        string badge1, badge2, badge3, badge4, badge5, badge6, badge7, badge8, badge9;
+        string lineCode1, lineCode2, lineCode3, lineCode4, lineCode5, lineCode6, lineCode7, lineCode8, lineCode9;
+        string section1, section2, section3, section4, section5, section6, section7, section8, section9;
+        string time1, time2, time3, time4, time5, time6, time7, time8, time9;
 
-        public FormMains()
+        public FormMainNine()
         {
             InitializeComponent();
         }
@@ -26,7 +27,7 @@ namespace NetrayaDashboard
         {
             dateTimeNow.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
 
-            // display top 12 data in tbl_log
+            // display top 9 data in tbl_log
             absent();
         }
 
@@ -35,6 +36,11 @@ namespace NetrayaDashboard
             Main mm = new Main();
             mm.Show();
             this.Hide();
+        }
+
+        private void FormMainNine_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
         }
 
         public void absent()
@@ -47,17 +53,26 @@ namespace NetrayaDashboard
                 dateTimeNow.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
                 timeNow.Text = DateTime.Now.ToString("HH:mm");
 
-                string queryTotalOntime =
+                if (roomtb.Text == "SMT-SA")
+                {
+                    queryAbsent =
                     "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                        "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE' OR a.ipDevice = 'SMT-MAINOUT') AND(a.indicator = 'In' OR a.indicator = 'In/Out') " +
-                        "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
+                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-SA' OR a.ipDevice = 'SMT-SA-OUT') " +
+                    "AND(a.indicator = 'In' OR a.indicator = 'In/Out') GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 9";
+                    //"SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
+                    //    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
+                    //    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
+                }
+                else if (roomtb.Text == "SMT-DIPPING")
+                {
+                    queryAbsent =
+                    "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
+                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-DIPPING') " +
+                    "AND(a.indicator = 'In') GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 9";
+                }             
 
-                //"SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                //    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
-                //    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";
-                               
 
-                using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryTotalOntime, myConn))
+                using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryAbsent, myConn))
                 {
                     DataTable dt = new DataTable();
                     adpt.Fill(dt);
@@ -182,98 +197,14 @@ namespace NetrayaDashboard
                             clockIn9.Text = time9;
                             panelColor(panel10, section9);
                         }
-                        if (r > 9)
-                        {
-                            employee10 = dt.Rows[9]["name"].ToString();
-                            badge10 = dt.Rows[9]["badgeID"].ToString();
-                            lineCode10 = dt.Rows[9]["linecode"].ToString();
-                            section10 = dt.Rows[9]["section"].ToString();
-                            time10 = Convert.ToDateTime(dt.Rows[9]["timelog"].ToString()).ToString("HH:mm"); ;
-                            namePanel10.Text = elipsisText(employee10);
-                            badgeId10.Text = badge10;
-                            linesection10.Text = lineCode10 + " (" + section10 + ")";
-                            clockIn10.Text = time10;
-                            panelColor(panel11, section10);
-                        }
-                        if (r > 10)
-                        {
-                            employee11 = dt.Rows[10]["name"].ToString();
-                            badge11 = dt.Rows[10]["badgeID"].ToString();
-                            lineCode11 = dt.Rows[10]["linecode"].ToString();
-                            section11 = dt.Rows[10]["section"].ToString();
-                            time11 = Convert.ToDateTime(dt.Rows[10]["timelog"].ToString()).ToString("HH:mm"); ;
-                            namePanel11.Text = elipsisText(employee11);
-                            badgeId11.Text = badge11;
-                            linesection11.Text = lineCode11 + " (" + section11 + ")";
-                            clockIn11.Text = time11;
-                            panelColor(panel12, section11);
-                        }
-                        if (r > 11)
-                        {
-                            employee12 = dt.Rows[11]["name"].ToString();
-                            badge12 = dt.Rows[11]["badgeID"].ToString();
-                            lineCode12 = dt.Rows[11]["linecode"].ToString();
-                            section12 = dt.Rows[11]["section"].ToString();
-                            time12 = Convert.ToDateTime(dt.Rows[11]["timelog"].ToString()).ToString("HH:mm"); ;
-                            namePanel12.Text = elipsisText(employee12);
-                            badgeId12.Text = badge12;
-                            linesection12.Text = lineCode12 + " (" + section12 + ")";
-                            clockIn12.Text = time12;
-                            panelColor(panel13, section12);
-                        }
-                        if (r > 12)
-                        {
-                            employee13 = dt.Rows[12]["name"].ToString();
-                            badge13 = dt.Rows[12]["badgeID"].ToString();
-                            lineCode13 = dt.Rows[12]["linecode"].ToString();
-                            section13 = dt.Rows[12]["section"].ToString();
-                            time13 = Convert.ToDateTime(dt.Rows[12]["timelog"].ToString()).ToString("HH:mm"); ;
-                            namePanel13.Text = elipsisText(employee13);
-                            badgeId13.Text = badge13;
-                            linesection13.Text =  lineCode13 + " (" + section13 + ")";
-                            clockIn13.Text = time13;
-                            panelColor(panel14, section13);
-                        }
-                        if (r > 13)
-                        {
-                            employee14 = dt.Rows[13]["name"].ToString();
-                            badge14 = dt.Rows[13]["badgeID"].ToString();
-                            lineCode14 = dt.Rows[13]["linecode"].ToString();
-                            section14 = dt.Rows[13]["section"].ToString();
-                            time14 = Convert.ToDateTime(dt.Rows[13]["timelog"].ToString()).ToString("HH:mm"); ;
-                            namePanel14.Text = elipsisText(employee14);
-                            badgeId14.Text = badge14;
-                            linesection14.Text = lineCode14 + " (" + section14 + ")";
-                            label24.Text = time14;
-                            panelColor(panel15, section14);
-                        }
-                        if (r > 14)
-                        {
-                            employee15 = dt.Rows[14]["name"].ToString();
-                            badge15 = dt.Rows[14]["badgeID"].ToString();
-                            lineCode15 = dt.Rows[14]["linecode"].ToString();
-                            section15 = dt.Rows[14]["section"].ToString();
-                            time15 = Convert.ToDateTime(dt.Rows[14]["timelog"].ToString()).ToString("HH:mm"); ;
-                            namePanel15.Text = elipsisText(employee15);
-                            badgeId15.Text = badge15;
-                            linesection15.Text = lineCode15 + " (" + section15 + ")";
-                            label26.Text = time15;
-                            panelColor(panel16, section15);
-                        }
                     }
                 }
-
 
             }
             catch (Exception ex)
             {
                 //MessageBox.Show("displayData: " + ex.Message);
             }
-        }
-
-        private void FormMains_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.ExitThread();
         }
 
         private void timer_Tick(object sender, System.EventArgs e)
@@ -290,9 +221,9 @@ namespace NetrayaDashboard
 
         private string elipsisText(string name)
         {
-            if (name.Length > 13)
+            if (name.Length > 10)
             {
-                return name = name.Substring(0, 13) + "..";
+                return name = name.Substring(0, 10) + "..";
             }
             else
             {

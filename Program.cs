@@ -27,7 +27,7 @@ namespace NetrayaDashboard
                 {
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
-                    Application.Run(new FormMains());
+                    Application.Run(new Main());
                 }
                 else
                 {

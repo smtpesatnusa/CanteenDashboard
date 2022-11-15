@@ -143,6 +143,7 @@ namespace NetrayaDashboard
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.BackButton = new MaterialSkin.Controls.MaterialButton();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -1344,7 +1345,7 @@ namespace NetrayaDashboard
             // 
             this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel17.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel17.Location = new System.Drawing.Point(936, 125);
+            this.panel17.Location = new System.Drawing.Point(932, 125);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(32, 32);
             this.panel17.TabIndex = 88;
@@ -1353,7 +1354,7 @@ namespace NetrayaDashboard
             // 
             this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel18.BackColor = System.Drawing.Color.Blue;
-            this.panel18.Location = new System.Drawing.Point(936, 167);
+            this.panel18.Location = new System.Drawing.Point(932, 167);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(32, 32);
             this.panel18.TabIndex = 89;
@@ -1362,7 +1363,7 @@ namespace NetrayaDashboard
             // 
             this.panel19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel19.BackColor = System.Drawing.Color.Gray;
-            this.panel19.Location = new System.Drawing.Point(936, 82);
+            this.panel19.Location = new System.Drawing.Point(932, 82);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(32, 32);
             this.panel19.TabIndex = 90;
@@ -1371,7 +1372,7 @@ namespace NetrayaDashboard
             // 
             this.panel20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel20.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel20.Location = new System.Drawing.Point(1210, 82);
+            this.panel20.Location = new System.Drawing.Point(1206, 82);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(32, 32);
             this.panel20.TabIndex = 91;
@@ -1382,7 +1383,7 @@ namespace NetrayaDashboard
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(977, 131);
+            this.label2.Location = new System.Drawing.Point(973, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 25);
             this.label2.TabIndex = 5;
@@ -1394,7 +1395,7 @@ namespace NetrayaDashboard
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(977, 175);
+            this.label3.Location = new System.Drawing.Point(973, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 25);
             this.label3.TabIndex = 92;
@@ -1406,7 +1407,7 @@ namespace NetrayaDashboard
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(977, 87);
+            this.label4.Location = new System.Drawing.Point(973, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 25);
             this.label4.TabIndex = 93;
@@ -1418,7 +1419,7 @@ namespace NetrayaDashboard
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1251, 87);
+            this.label5.Location = new System.Drawing.Point(1247, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 25);
             this.label5.TabIndex = 94;
@@ -1430,7 +1431,7 @@ namespace NetrayaDashboard
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(1119, 89);
+            this.label6.Location = new System.Drawing.Point(1115, 89);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 25);
             this.label6.TabIndex = 100;
@@ -1442,7 +1443,7 @@ namespace NetrayaDashboard
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1119, 175);
+            this.label7.Location = new System.Drawing.Point(1115, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 25);
             this.label7.TabIndex = 99;
@@ -1454,7 +1455,7 @@ namespace NetrayaDashboard
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(1119, 133);
+            this.label8.Location = new System.Drawing.Point(1115, 133);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 25);
             this.label8.TabIndex = 95;
@@ -1464,7 +1465,7 @@ namespace NetrayaDashboard
             // 
             this.panel21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel21.BackColor = System.Drawing.Color.MediumPurple;
-            this.panel21.Location = new System.Drawing.Point(1075, 82);
+            this.panel21.Location = new System.Drawing.Point(1071, 82);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(32, 32);
             this.panel21.TabIndex = 98;
@@ -1473,7 +1474,7 @@ namespace NetrayaDashboard
             // 
             this.panel22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel22.BackColor = System.Drawing.Color.Salmon;
-            this.panel22.Location = new System.Drawing.Point(1075, 167);
+            this.panel22.Location = new System.Drawing.Point(1071, 167);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(32, 32);
             this.panel22.TabIndex = 97;
@@ -1482,16 +1483,38 @@ namespace NetrayaDashboard
             // 
             this.panel23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel23.BackColor = System.Drawing.Color.HotPink;
-            this.panel23.Location = new System.Drawing.Point(1075, 125);
+            this.panel23.Location = new System.Drawing.Point(1071, 125);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(32, 32);
             this.panel23.TabIndex = 96;
+            // 
+            // BackButton
+            // 
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BackButton.Depth = 0;
+            this.BackButton.HighEmphasis = true;
+            this.BackButton.Icon = global::NetrayaDashboard.Properties.Resources.icons8_reply_arrow_30;
+            this.BackButton.Location = new System.Drawing.Point(1251, 163);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.BackButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BackButton.Name = "BackButton";
+            this.BackButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BackButton.Size = new System.Drawing.Size(87, 36);
+            this.BackButton.TabIndex = 266;
+            this.BackButton.Text = "Back";
+            this.BackButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BackButton.UseAccentColor = false;
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // FormMains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1369, 781);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -1515,6 +1538,7 @@ namespace NetrayaDashboard
             this.Name = "FormMains";
             this.Text = "Netraya Attendance";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMains_FormClosing);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -1667,6 +1691,7 @@ namespace NetrayaDashboard
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label badgeId1;
         private System.Windows.Forms.Label linesection1;
+        private MaterialSkin.Controls.MaterialButton BackButton;
     }
 }
 

@@ -1,6 +1,4 @@
-﻿using ClosedXML.Excel;
-using ExcelDataReader;
-using MaterialSkin;
+﻿using MaterialSkin;
 using MaterialSkin.Controls;
 using MySql.Data.MySqlClient;
 using System;
@@ -168,81 +166,6 @@ namespace NetrayaDashboard
 
             var resultString = new String(Charsarr);
             return resultString;
-        }
-
-        //read excel file
-        public System.Data.DataTable GetDataFromExcel(string path, dynamic worksheet)
-        {
-            DataTable dt = new DataTable();
-            //Open the Excel file using ClosedXML.
-            using (XLWorkbook workBook = new XLWorkbook(path))
-            {
-                //Read the first Sheet from Excel file.
-                IXLWorksheet workSheet = workBook.Worksheet(worksheet);
-
-                //Create a new DataTable.
-                //Loop through the Worksheet rows.
-                bool firstRow = true;
-                foreach (IXLRow row in workSheet.Rows())
-                {
-                    //Use the first row to add columns to DataTable.
-                    if (firstRow)
-                    {
-                        foreach (IXLCell cell in row.Cells())
-                        {
-                            if (!string.IsNullOrEmpty(cell.Value.ToString()))
-                            {
-                                dt.Columns.Add(cell.Value.ToString());
-                            }
-                            else
-                            {
-                                break;
-                            }
-                        }
-                        firstRow = false;
-                    }
-                    else
-                    {
-                        int i = 0;
-                        DataRow toInsert = dt.NewRow();
-                        foreach (IXLCell cell in row.Cells(1, dt.Columns.Count))
-                        {
-                            try
-                            {
-                                toInsert[i] = cell.Value.ToString();
-                            }
-                            catch (Exception ex)
-                            {
-
-                            }
-                            i++;
-                        }
-                        dt.Rows.Add(toInsert);
-                    }
-                }
-                return dt;
-            }
-        }
-
-        public System.Data.DataTable ReadDataExcel(string path)
-        {
-            DataTable dt = new DataTable();
-
-            using (var stream = File.Open(path, FileMode.Open, FileAccess.Read))
-            {
-                using (var reader = ExcelReaderFactory.CreateReader(stream))
-                {
-                    do
-                    {
-                        while (reader.Read())
-                        {
-                            Console.WriteLine($"Row: {reader.Depth} Values: {reader[0]}, {reader[1]}");
-                        }
-                    } while (reader.NextResult());
-                }
-
-            }
-            return dt;
         }
 
         // to fill listbox from db

@@ -71,11 +71,11 @@ namespace NetrayaDashboard
             this.linesection7 = new System.Windows.Forms.Label();
             this.namePanel7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.namePanel6 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.badgeId6 = new System.Windows.Forms.Label();
             this.clockIn6 = new System.Windows.Forms.Label();
             this.linesection6 = new System.Windows.Forms.Label();
-            this.namePanel6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.badgeId5 = new System.Windows.Forms.Label();
@@ -182,7 +182,7 @@ namespace NetrayaDashboard
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(37, 178);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(178, 40);
+            this.label17.Size = new System.Drawing.Size(172, 39);
             this.label17.TabIndex = 8;
             this.label17.Text = "Clock-in :";
             // 
@@ -193,7 +193,7 @@ namespace NetrayaDashboard
             this.badgeId3.ForeColor = System.Drawing.Color.White;
             this.badgeId3.Location = new System.Drawing.Point(38, 92);
             this.badgeId3.Name = "badgeId3";
-            this.badgeId3.Size = new System.Drawing.Size(161, 40);
+            this.badgeId3.Size = new System.Drawing.Size(158, 39);
             this.badgeId3.TabIndex = 7;
             this.badgeId3.Text = "badgeID";
             // 
@@ -217,7 +217,7 @@ namespace NetrayaDashboard
             this.linesection3.ForeColor = System.Drawing.Color.White;
             this.linesection3.Location = new System.Drawing.Point(34, 138);
             this.linesection3.Name = "linesection3";
-            this.linesection3.Size = new System.Drawing.Size(194, 40);
+            this.linesection3.Size = new System.Drawing.Size(190, 39);
             this.linesection3.TabIndex = 5;
             this.linesection3.Text = "linesection";
             // 
@@ -266,7 +266,7 @@ namespace NetrayaDashboard
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(34, 178);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(178, 40);
+            this.label16.Size = new System.Drawing.Size(172, 39);
             this.label16.TabIndex = 6;
             this.label16.Text = "Clock-in :";
             // 
@@ -277,7 +277,7 @@ namespace NetrayaDashboard
             this.badgeId2.ForeColor = System.Drawing.Color.White;
             this.badgeId2.Location = new System.Drawing.Point(34, 91);
             this.badgeId2.Name = "badgeId2";
-            this.badgeId2.Size = new System.Drawing.Size(161, 40);
+            this.badgeId2.Size = new System.Drawing.Size(158, 39);
             this.badgeId2.TabIndex = 5;
             this.badgeId2.Text = "badgeID";
             // 
@@ -288,7 +288,7 @@ namespace NetrayaDashboard
             this.linesection2.ForeColor = System.Drawing.Color.White;
             this.linesection2.Location = new System.Drawing.Point(34, 138);
             this.linesection2.Name = "linesection2";
-            this.linesection2.Size = new System.Drawing.Size(194, 40);
+            this.linesection2.Size = new System.Drawing.Size(190, 39);
             this.linesection2.TabIndex = 3;
             this.linesection2.Text = "linesection";
             // 
@@ -321,13 +321,14 @@ namespace NetrayaDashboard
             // 
             this.clockIn1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn1.AutoSize = true;
             this.clockIn1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn1.ForeColor = System.Drawing.Color.White;
-            this.clockIn1.Location = new System.Drawing.Point(260, 177);
+            this.clockIn1.Location = new System.Drawing.Point(235, 177);
             this.clockIn1.Name = "clockIn1";
-            this.clockIn1.Size = new System.Drawing.Size(256, 93);
+            this.clockIn1.Size = new System.Drawing.Size(209, 93);
             this.clockIn1.TabIndex = 8;
-            this.clockIn1.Text = "08:11";
+            this.clockIn1.Text = "time";
             this.clockIn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -337,7 +338,7 @@ namespace NetrayaDashboard
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(34, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 40);
+            this.label1.Size = new System.Drawing.Size(172, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Clock-in :";
             // 
@@ -348,7 +349,7 @@ namespace NetrayaDashboard
             this.badgeId1.ForeColor = System.Drawing.Color.White;
             this.badgeId1.Location = new System.Drawing.Point(38, 91);
             this.badgeId1.Name = "badgeId1";
-            this.badgeId1.Size = new System.Drawing.Size(131, 40);
+            this.badgeId1.Size = new System.Drawing.Size(125, 39);
             this.badgeId1.TabIndex = 3;
             this.badgeId1.Text = "039928";
             // 
@@ -359,7 +360,7 @@ namespace NetrayaDashboard
             this.linesection1.ForeColor = System.Drawing.Color.White;
             this.linesection1.Location = new System.Drawing.Point(34, 138);
             this.linesection1.Name = "linesection1";
-            this.linesection1.Size = new System.Drawing.Size(227, 40);
+            this.linesection1.Size = new System.Drawing.Size(219, 39);
             this.linesection1.TabIndex = 1;
             this.linesection1.Text = "SM11-3C(PE)";
             // 
@@ -395,7 +396,7 @@ namespace NetrayaDashboard
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(35, 158);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(178, 40);
+            this.label21.Size = new System.Drawing.Size(172, 39);
             this.label21.TabIndex = 9;
             this.label21.Text = "Clock-in :";
             // 
@@ -406,7 +407,7 @@ namespace NetrayaDashboard
             this.badgeId9.ForeColor = System.Drawing.Color.White;
             this.badgeId9.Location = new System.Drawing.Point(34, 94);
             this.badgeId9.Name = "badgeId9";
-            this.badgeId9.Size = new System.Drawing.Size(161, 40);
+            this.badgeId9.Size = new System.Drawing.Size(158, 39);
             this.badgeId9.TabIndex = 8;
             this.badgeId9.Text = "badgeID";
             // 
@@ -430,7 +431,7 @@ namespace NetrayaDashboard
             this.linesection9.ForeColor = System.Drawing.Color.White;
             this.linesection9.Location = new System.Drawing.Point(34, 123);
             this.linesection9.Name = "linesection9";
-            this.linesection9.Size = new System.Drawing.Size(194, 40);
+            this.linesection9.Size = new System.Drawing.Size(190, 39);
             this.linesection9.TabIndex = 5;
             this.linesection9.Text = "linesection";
             // 
@@ -466,7 +467,7 @@ namespace NetrayaDashboard
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(35, 157);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(178, 40);
+            this.label22.Size = new System.Drawing.Size(172, 39);
             this.label22.TabIndex = 9;
             this.label22.Text = "Clock-in :";
             // 
@@ -477,7 +478,7 @@ namespace NetrayaDashboard
             this.badgeId8.ForeColor = System.Drawing.Color.White;
             this.badgeId8.Location = new System.Drawing.Point(38, 94);
             this.badgeId8.Name = "badgeId8";
-            this.badgeId8.Size = new System.Drawing.Size(161, 40);
+            this.badgeId8.Size = new System.Drawing.Size(158, 39);
             this.badgeId8.TabIndex = 8;
             this.badgeId8.Text = "badgeID";
             // 
@@ -501,7 +502,7 @@ namespace NetrayaDashboard
             this.linesection8.ForeColor = System.Drawing.Color.White;
             this.linesection8.Location = new System.Drawing.Point(34, 123);
             this.linesection8.Name = "linesection8";
-            this.linesection8.Size = new System.Drawing.Size(194, 40);
+            this.linesection8.Size = new System.Drawing.Size(190, 39);
             this.linesection8.TabIndex = 5;
             this.linesection8.Text = "linesection";
             // 
@@ -537,7 +538,7 @@ namespace NetrayaDashboard
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(41, 158);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(178, 40);
+            this.label23.Size = new System.Drawing.Size(172, 39);
             this.label23.TabIndex = 9;
             this.label23.Text = "Clock-in :";
             // 
@@ -548,7 +549,7 @@ namespace NetrayaDashboard
             this.badgeId7.ForeColor = System.Drawing.Color.White;
             this.badgeId7.Location = new System.Drawing.Point(38, 94);
             this.badgeId7.Name = "badgeId7";
-            this.badgeId7.Size = new System.Drawing.Size(161, 40);
+            this.badgeId7.Size = new System.Drawing.Size(158, 39);
             this.badgeId7.TabIndex = 8;
             this.badgeId7.Text = "badgeID";
             // 
@@ -572,7 +573,7 @@ namespace NetrayaDashboard
             this.linesection7.ForeColor = System.Drawing.Color.White;
             this.linesection7.Location = new System.Drawing.Point(34, 124);
             this.linesection7.Name = "linesection7";
-            this.linesection7.Size = new System.Drawing.Size(194, 40);
+            this.linesection7.Size = new System.Drawing.Size(190, 39);
             this.linesection7.TabIndex = 5;
             this.linesection7.Text = "linesection";
             // 
@@ -601,6 +602,16 @@ namespace NetrayaDashboard
             this.panel7.Size = new System.Drawing.Size(607, 278);
             this.panel7.TabIndex = 85;
             // 
+            // namePanel6
+            // 
+            this.namePanel6.Font = new System.Drawing.Font("Century Gothic", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel6.ForeColor = System.Drawing.Color.Black;
+            this.namePanel6.Location = new System.Drawing.Point(0, 0);
+            this.namePanel6.Name = "namePanel6";
+            this.namePanel6.Size = new System.Drawing.Size(267, 93);
+            this.namePanel6.TabIndex = 0;
+            this.namePanel6.Text = "name";
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -608,7 +619,7 @@ namespace NetrayaDashboard
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(37, 155);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(178, 40);
+            this.label25.Size = new System.Drawing.Size(172, 39);
             this.label25.TabIndex = 9;
             this.label25.Text = "Clock-in :";
             // 
@@ -619,7 +630,7 @@ namespace NetrayaDashboard
             this.badgeId6.ForeColor = System.Drawing.Color.White;
             this.badgeId6.Location = new System.Drawing.Point(38, 94);
             this.badgeId6.Name = "badgeId6";
-            this.badgeId6.Size = new System.Drawing.Size(161, 40);
+            this.badgeId6.Size = new System.Drawing.Size(158, 39);
             this.badgeId6.TabIndex = 8;
             this.badgeId6.Text = "badgeID";
             // 
@@ -643,19 +654,9 @@ namespace NetrayaDashboard
             this.linesection6.ForeColor = System.Drawing.Color.White;
             this.linesection6.Location = new System.Drawing.Point(36, 123);
             this.linesection6.Name = "linesection6";
-            this.linesection6.Size = new System.Drawing.Size(194, 40);
+            this.linesection6.Size = new System.Drawing.Size(190, 39);
             this.linesection6.TabIndex = 5;
             this.linesection6.Text = "linesection";
-            // 
-            // namePanel6
-            // 
-            this.namePanel6.Font = new System.Drawing.Font("Century Gothic", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namePanel6.ForeColor = System.Drawing.Color.Black;
-            this.namePanel6.Location = new System.Drawing.Point(0, 0);
-            this.namePanel6.Name = "namePanel6";
-            this.namePanel6.Size = new System.Drawing.Size(267, 93);
-            this.namePanel6.TabIndex = 0;
-            this.namePanel6.Text = "name";
             // 
             // panel6
             // 
@@ -678,7 +679,7 @@ namespace NetrayaDashboard
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(40, 154);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(178, 40);
+            this.label19.Size = new System.Drawing.Size(172, 39);
             this.label19.TabIndex = 9;
             this.label19.Text = "Clock-in :";
             // 
@@ -689,7 +690,7 @@ namespace NetrayaDashboard
             this.badgeId5.ForeColor = System.Drawing.Color.White;
             this.badgeId5.Location = new System.Drawing.Point(37, 91);
             this.badgeId5.Name = "badgeId5";
-            this.badgeId5.Size = new System.Drawing.Size(161, 40);
+            this.badgeId5.Size = new System.Drawing.Size(158, 39);
             this.badgeId5.TabIndex = 8;
             this.badgeId5.Text = "badgeID";
             // 
@@ -713,7 +714,7 @@ namespace NetrayaDashboard
             this.linesection5.ForeColor = System.Drawing.Color.White;
             this.linesection5.Location = new System.Drawing.Point(35, 121);
             this.linesection5.Name = "linesection5";
-            this.linesection5.Size = new System.Drawing.Size(194, 40);
+            this.linesection5.Size = new System.Drawing.Size(190, 39);
             this.linesection5.TabIndex = 5;
             this.linesection5.Text = "linesection";
             // 
@@ -749,7 +750,7 @@ namespace NetrayaDashboard
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(39, 154);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(178, 40);
+            this.label18.Size = new System.Drawing.Size(172, 39);
             this.label18.TabIndex = 9;
             this.label18.Text = "Clock-in :";
             // 
@@ -760,7 +761,7 @@ namespace NetrayaDashboard
             this.badgeId4.ForeColor = System.Drawing.Color.White;
             this.badgeId4.Location = new System.Drawing.Point(38, 87);
             this.badgeId4.Name = "badgeId4";
-            this.badgeId4.Size = new System.Drawing.Size(161, 40);
+            this.badgeId4.Size = new System.Drawing.Size(158, 39);
             this.badgeId4.TabIndex = 8;
             this.badgeId4.Text = "badgeID";
             // 
@@ -784,7 +785,7 @@ namespace NetrayaDashboard
             this.linesection4.ForeColor = System.Drawing.Color.White;
             this.linesection4.Location = new System.Drawing.Point(40, 117);
             this.linesection4.Name = "linesection4";
-            this.linesection4.Size = new System.Drawing.Size(194, 40);
+            this.linesection4.Size = new System.Drawing.Size(190, 39);
             this.linesection4.TabIndex = 5;
             this.linesection4.Text = "linesection";
             // 

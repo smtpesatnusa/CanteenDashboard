@@ -57,8 +57,8 @@ namespace NetrayaDashboard
                 {
                     queryAbsent =
                     "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
-                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-SA' OR a.ipDevice = 'SMT-SA-OUT') " +
-                    "AND(a.indicator = 'In' OR a.indicator = 'In/Out') GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 9";
+                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-SA') " +
+                    "AND(a.indicator = 'In') GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 9";
                     //"SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
                     //    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND (a.ipDevice = 'SMT-MAINROOM' OR a.ipDevice = 'SMT-GATE') AND a.indicator = 'In' " +
                     //    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 15";

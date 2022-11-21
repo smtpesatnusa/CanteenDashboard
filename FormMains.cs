@@ -76,7 +76,7 @@ namespace NetrayaDashboard
                             badgeId1.Text = badge1;
                             linesection1.Text = lineCode1 + " (" + section1 + ")";
                             clockIn1.Text = time1;
-                            panelColor(panel2, section1);
+                            panelColor(panel1, namePanel1, section1);
                         }
                         if (r > 1)
                         {
@@ -89,7 +89,7 @@ namespace NetrayaDashboard
                             badgeId2.Text = badge2;
                             linesection2.Text = lineCode2 + " (" + section2 + ")";
                             clockIn2.Text = time2;
-                            panelColor(panel3, section2);
+                            panelColor(panel2, namePanel2, section2);
                         }
                         if (r > 2)
                         {
@@ -102,7 +102,7 @@ namespace NetrayaDashboard
                             badgeId3.Text = badge3;
                             linesection3.Text = lineCode3 + " (" + section3 + ")";
                             clockIn3.Text = time3;
-                            panelColor(panel4, section3);
+                            panelColor(panel3, namePanel3, section3);
                         }
                         if (r > 3)
                         {
@@ -115,7 +115,7 @@ namespace NetrayaDashboard
                             badgeId4.Text = badge4;
                             linesection4.Text = lineCode4 + " (" + section4 + ")";
                             clockIn4.Text = time4;
-                            panelColor(panel5, section4);
+                            panelColor(panel4, namePanel4, section4);
                         }
                         if (r > 4)
                         {
@@ -128,7 +128,7 @@ namespace NetrayaDashboard
                             badgeId5.Text = badge5;
                             linesection5.Text = lineCode5 + " (" + section5 + ")";
                             clockIn5.Text = time5;
-                            panelColor(panel6, section5);
+                            panelColor(panel5, namePanel5, section5);
                         }
                         if (r > 5)
                         {
@@ -141,7 +141,7 @@ namespace NetrayaDashboard
                             badgeId6.Text = badge6;
                             linesection6.Text = lineCode6 + " (" + section6 + ")";
                             clockIn6.Text = time6;
-                            panelColor(panel7, section6);
+                            panelColor(panel6, namePanel6, section6);
                         }
                         if (r > 6)
                         {
@@ -154,7 +154,7 @@ namespace NetrayaDashboard
                             badgeId7.Text = badge7;
                             linesection7.Text = lineCode7 + " (" + section7 + ")";
                             clockIn7.Text = time7;
-                            panelColor(panel8, section7);
+                            panelColor(panel7, namePanel7, section7);
                         }
                         if (r > 7)
                         {
@@ -167,7 +167,7 @@ namespace NetrayaDashboard
                             badgeId8.Text = badge8;
                             linesection8.Text = lineCode8 + " (" + section8 + ")";
                             clockIn8.Text = time8;
-                            panelColor(panel9, section8);
+                            panelColor(panel8, namePanel8, section8);
                         }
                         if (r > 8)
                         {
@@ -180,7 +180,7 @@ namespace NetrayaDashboard
                             badgeId9.Text = badge9;
                             linesection9.Text = lineCode9 + " (" + section9 + ")";
                             clockIn9.Text = time9;
-                            panelColor(panel10, section9);
+                            panelColor(panel9, namePanel9, section9);
                         }
                         if (r > 9)
                         {
@@ -193,7 +193,7 @@ namespace NetrayaDashboard
                             badgeId10.Text = badge10;
                             linesection10.Text = lineCode10 + " (" + section10 + ")";
                             clockIn10.Text = time10;
-                            panelColor(panel11, section10);
+                            panelColor(panel10, namePanel10, section10);
                         }
                         if (r > 10)
                         {
@@ -206,7 +206,7 @@ namespace NetrayaDashboard
                             badgeId11.Text = badge11;
                             linesection11.Text = lineCode11 + " (" + section11 + ")";
                             clockIn11.Text = time11;
-                            panelColor(panel12, section11);
+                            panelColor(panel11, namePanel11, section11);
                         }
                         if (r > 11)
                         {
@@ -219,7 +219,7 @@ namespace NetrayaDashboard
                             badgeId12.Text = badge12;
                             linesection12.Text = lineCode12 + " (" + section12 + ")";
                             clockIn12.Text = time12;
-                            panelColor(panel13, section12);
+                            panelColor(panel12, namePanel12, section12);
                         }
                         if (r > 12)
                         {
@@ -232,7 +232,7 @@ namespace NetrayaDashboard
                             badgeId13.Text = badge13;
                             linesection13.Text =  lineCode13 + " (" + section13 + ")";
                             clockIn13.Text = time13;
-                            panelColor(panel14, section13);
+                            panelColor(panel13, namePanel13, section13);
                         }
                         if (r > 13)
                         {
@@ -245,7 +245,7 @@ namespace NetrayaDashboard
                             badgeId14.Text = badge14;
                             linesection14.Text = lineCode14 + " (" + section14 + ")";
                             label24.Text = time14;
-                            panelColor(panel15, section14);
+                            panelColor(panel14, namePanel14, section14);
                         }
                         if (r > 14)
                         {
@@ -258,7 +258,7 @@ namespace NetrayaDashboard
                             badgeId15.Text = badge15;
                             linesection15.Text = lineCode15 + " (" + section15 + ")";
                             label26.Text = time15;
-                            panelColor(panel16, section15);
+                            panelColor(panel15, namePanel15, section15);
                         }
                     }
                 }
@@ -300,30 +300,37 @@ namespace NetrayaDashboard
             }
         }
 
-        private void panelColor(Panel panel, string lineSection)
+        private void panelColor(Panel panel, Label label, string lineSection)
         {
             switch (lineSection)
             {
                 case "PROD":
                     panel.BackColor = Color.DeepSkyBlue;
+                    label.ForeColor = Color.Black;
                     break;
                 case "PE":
                     panel.BackColor = Color.Blue;
+                    label.ForeColor = Color.White;
                     break;
                 case "MGR":
                     panel.BackColor = Color.Gray;
+                    label.ForeColor = Color.Black;
                     break;
                 case "ENG":
                     panel.BackColor = Color.MediumSeaGreen;
+                    label.ForeColor = Color.Black;
                     break;
                 case "PC":
                     panel.BackColor = Color.MediumPurple;
+                    label.ForeColor = Color.Black;
                     break;
                 case "QC":
                     panel.BackColor = Color.HotPink;
+                    label.ForeColor = Color.Black;
                     break;
                 case "STORE":
                     panel.BackColor = Color.Salmon;
+                    label.ForeColor = Color.Black;
                     break;
             }
 

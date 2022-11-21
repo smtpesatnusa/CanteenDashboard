@@ -26,7 +26,7 @@ namespace NetrayaDashboard
         private void FormMain_Load(object sender, System.EventArgs e)
         {
             dateTimeNow.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
-
+            queryAbsent = null;
             // display top 9 data in tbl_log
             absent();
         }
@@ -91,7 +91,7 @@ namespace NetrayaDashboard
                             badgeId1.Text = badge1;
                             linesection1.Text = lineCode1 + " (" + section1 + ")";
                             clockIn1.Text = time1;
-                            panelColor(panel2, section1);
+                            panelColor(panel1, namePanel1, section1);
                         }
                         if (r > 1)
                         {
@@ -104,7 +104,7 @@ namespace NetrayaDashboard
                             badgeId2.Text = badge2;
                             linesection2.Text = lineCode2 + " (" + section2 + ")";
                             clockIn2.Text = time2;
-                            panelColor(panel3, section2);
+                            panelColor(panel2, namePanel2, section2);
                         }
                         if (r > 2)
                         {
@@ -117,7 +117,7 @@ namespace NetrayaDashboard
                             badgeId3.Text = badge3;
                             linesection3.Text = lineCode3 + " (" + section3 + ")";
                             clockIn3.Text = time3;
-                            panelColor(panel4, section3);
+                            panelColor(panel3, namePanel3, section3);
                         }
                         if (r > 3)
                         {
@@ -130,7 +130,7 @@ namespace NetrayaDashboard
                             badgeId4.Text = badge4;
                             linesection4.Text = lineCode4 + " (" + section4 + ")";
                             clockIn4.Text = time4;
-                            panelColor(panel5, section4);
+                            panelColor(panel4, namePanel4, section4);
                         }
                         if (r > 4)
                         {
@@ -143,7 +143,7 @@ namespace NetrayaDashboard
                             badgeId5.Text = badge5;
                             linesection5.Text = lineCode5 + " (" + section5 + ")";
                             clockIn5.Text = time5;
-                            panelColor(panel6, section5);
+                            panelColor(panel5, namePanel5, section5);
                         }
                         if (r > 5)
                         {
@@ -156,7 +156,7 @@ namespace NetrayaDashboard
                             badgeId6.Text = badge6;
                             linesection6.Text = lineCode6 + " (" + section6 + ")";
                             clockIn6.Text = time6;
-                            panelColor(panel7, section6);
+                            panelColor(panel6, namePanel6, section6);
                         }
                         if (r > 6)
                         {
@@ -169,7 +169,7 @@ namespace NetrayaDashboard
                             badgeId7.Text = badge7;
                             linesection7.Text = lineCode7 + " (" + section7 + ")";
                             clockIn7.Text = time7;
-                            panelColor(panel8, section7);
+                            panelColor(panel7, namePanel7, section7);
                         }
                         if (r > 7)
                         {
@@ -182,7 +182,7 @@ namespace NetrayaDashboard
                             badgeId8.Text = badge8;
                             linesection8.Text = lineCode8 + " (" + section8 + ")";
                             clockIn8.Text = time8;
-                            panelColor(panel9, section8);
+                            panelColor(panel8, namePanel8, section8);
                         }
                         if (r > 8)
                         {
@@ -195,7 +195,7 @@ namespace NetrayaDashboard
                             badgeId9.Text = badge9;
                             linesection9.Text = lineCode9 + " (" + section9 + ")";
                             clockIn9.Text = time9;
-                            panelColor(panel10, section9);
+                            panelColor(panel9, namePanel9, section9);
                         }
                     }
                 }
@@ -221,9 +221,9 @@ namespace NetrayaDashboard
 
         private string elipsisText(string name)
         {
-            if (name.Length > 10)
+            if (name.Length > 12)
             {
-                return name = name.Substring(0, 10) + "..";
+                return name = name.Substring(0, 12) + "..";
             }
             else
             {
@@ -231,30 +231,37 @@ namespace NetrayaDashboard
             }
         }
 
-        private void panelColor(Panel panel, string lineSection)
+        private void panelColor(Panel panel, Label label, string lineSection)
         {
             switch (lineSection)
             {
                 case "PROD":
                     panel.BackColor = Color.DeepSkyBlue;
+                    label.ForeColor = Color.Black;
                     break;
                 case "PE":
                     panel.BackColor = Color.Blue;
+                    label.ForeColor = Color.White;
                     break;
                 case "MGR":
                     panel.BackColor = Color.Gray;
+                    label.ForeColor = Color.Black;
                     break;
                 case "ENG":
                     panel.BackColor = Color.MediumSeaGreen;
+                    label.ForeColor = Color.Black;
                     break;
                 case "PC":
                     panel.BackColor = Color.MediumPurple;
+                    label.ForeColor = Color.Black;
                     break;
                 case "QC":
                     panel.BackColor = Color.HotPink;
+                    label.ForeColor = Color.Black;
                     break;
                 case "STORE":
                     panel.BackColor = Color.Salmon;
+                    label.ForeColor = Color.Black;
                     break;
             }
 

@@ -245,7 +245,7 @@ namespace NetrayaDashboard
                     break;
                 case "MGR":
                     panel.BackColor = Color.Gray;
-                    label.ForeColor = Color.Black;
+                    label.ForeColor = Color.White;
                     break;
                 case "ENG":
                     panel.BackColor = Color.MediumSeaGreen;
@@ -261,6 +261,10 @@ namespace NetrayaDashboard
                     break;
                 case "STORE":
                     panel.BackColor = Color.Salmon;
+                    label.ForeColor = Color.Black;
+                    break;
+                case "CS":
+                    panel.BackColor = Color.Gold;
                     label.ForeColor = Color.Black;
                     break;
             }

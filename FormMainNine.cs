@@ -69,8 +69,14 @@ namespace NetrayaDashboard
                     "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
                     "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-DIPPING') " +
                     "AND(a.indicator = 'In') GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 9";
-                }             
-
+                }
+                else if (roomtb.Text == "SMT-OUT")
+                {
+                    queryAbsent =
+                    "SELECT b.linecode, c.description AS section, b.badgeID, b.name,  MAX(a.timelog)AS timelog FROM tbl_log a, tbl_employee b, tbl_masterlinecode c " +
+                    "WHERE a.rfidno = b.rfidno AND b.linecode = c.name AND(a.ipDevice = 'SMT-SA-OUT' OR a.ipDevice = 'SMT-LOCKER')" +
+                    "GROUP BY b.badgeID, b.name, b.linecode ORDER BY timelog DESC LIMIT 9";
+                }
 
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryAbsent, myConn))
                 {

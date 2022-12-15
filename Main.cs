@@ -42,6 +42,13 @@ namespace NetrayaDashboard
                 form.roomtb.Text = cmbRoom.Text;
                 form.Show();                
             }
+            else if (cmbRoom.Text == "SMT-OUT")
+            {
+                FormMainNine form = new FormMainNine();
+                this.Hide();
+                form.roomtb.Text = cmbRoom.Text;
+                form.Show();
+            }
         }
     }
 }

@@ -53,7 +53,8 @@
             this.cmbRoom.Items.AddRange(new object[] {
             "SMT-MAINROOM",
             "SMT-SA",
-            "SMT-DIPPING"});
+            "SMT-DIPPING",
+            "SMT-OUT"});
             this.cmbRoom.Location = new System.Drawing.Point(94, 124);
             this.cmbRoom.MaxDropDownItems = 4;
             this.cmbRoom.MouseState = MaterialSkin.MouseState.OUT;

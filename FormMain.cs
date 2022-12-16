@@ -23,6 +23,11 @@ namespace NetrayaDashboard
             InitializeComponent();
         }
 
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
+        }
+
         private void FormMain_Load(object sender, System.EventArgs e)
         {
             dateTimeNow.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");

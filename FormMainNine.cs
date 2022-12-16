@@ -205,7 +205,6 @@ namespace NetrayaDashboard
                         }
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -274,7 +273,6 @@ namespace NetrayaDashboard
                     label.ForeColor = Color.Black;
                     break;
             }
-
         }
     }
 }

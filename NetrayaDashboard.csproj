@@ -7,7 +7,7 @@
     <ProjectGuid>{3CBF9ADA-417F-4F81-89ED-DED7D13E322D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>NetrayaDashboard</RootNamespace>
-    <AssemblyName>NetrayaDashboard</AssemblyName>
+    <AssemblyName>Netraya Dashboard</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.192.254\SystemSupport\Netraya\Netraya Dashboard\</UpdateUrl>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -127,6 +127,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMainNineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainNineOut.Designer.cs">
+      <DependentUpon>FormMainNineOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainNine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     <Compile Include="Setup\Helper.cs" />
     <Compile Include="Setup\MessagesHelper.cs" />
     <Compile Include="Setup\QueryLibrary.cs" />
+    <EmbeddedResource Include="FormMainNineOut.resx">
+      <DependentUpon>FormMainNineOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainNine.resx">
       <DependentUpon>FormMainNine.cs</DependentUpon>
     </EmbeddedResource>

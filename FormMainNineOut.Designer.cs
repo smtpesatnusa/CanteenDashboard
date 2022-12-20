@@ -1,7 +1,7 @@
 ﻿
 namespace NetrayaDashboard
 {
-    partial class FormMainNine
+    partial class FormMainNineOut
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace NetrayaDashboard
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainNine));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainNineOut));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -106,10 +106,10 @@ namespace NetrayaDashboard
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.roomtb = new MaterialSkin.Controls.MaterialLabel();
+            this.BackButton = new MaterialSkin.Controls.MaterialButton();
             this.label9 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.indocatorLbl = new System.Windows.Forms.Label();
-            this.BackButton = new MaterialSkin.Controls.MaterialButton();
             this.panelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -188,9 +188,9 @@ namespace NetrayaDashboard
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(37, 178);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(172, 39);
+            this.label17.Size = new System.Drawing.Size(195, 39);
             this.label17.TabIndex = 8;
-            this.label17.Text = "Clock-in :";
+            this.label17.Text = "Clock-out :";
             // 
             // badgeId3
             // 
@@ -273,9 +273,9 @@ namespace NetrayaDashboard
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(35, 178);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(172, 39);
+            this.label16.Size = new System.Drawing.Size(195, 39);
             this.label16.TabIndex = 6;
-            this.label16.Text = "Clock-in :";
+            this.label16.Text = "Clock-out :";
             // 
             // badgeId2
             // 
@@ -346,9 +346,9 @@ namespace NetrayaDashboard
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 39);
+            this.label1.Size = new System.Drawing.Size(195, 39);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Clock-in :";
+            this.label1.Text = "Clock-out :";
             // 
             // badgeId1
             // 
@@ -405,9 +405,9 @@ namespace NetrayaDashboard
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(35, 158);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(172, 39);
+            this.label21.Size = new System.Drawing.Size(195, 39);
             this.label21.TabIndex = 9;
-            this.label21.Text = "Clock-in :";
+            this.label21.Text = "Clock-out :";
             // 
             // badgeId9
             // 
@@ -477,9 +477,9 @@ namespace NetrayaDashboard
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(35, 158);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(172, 39);
+            this.label22.Size = new System.Drawing.Size(195, 39);
             this.label22.TabIndex = 9;
-            this.label22.Text = "Clock-in :";
+            this.label22.Text = "Clock-out :";
             // 
             // badgeId8
             // 
@@ -549,9 +549,9 @@ namespace NetrayaDashboard
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(41, 158);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(172, 39);
+            this.label23.Size = new System.Drawing.Size(195, 39);
             this.label23.TabIndex = 9;
-            this.label23.Text = "Clock-in :";
+            this.label23.Text = "Clock-out :";
             // 
             // badgeId7
             // 
@@ -632,9 +632,9 @@ namespace NetrayaDashboard
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(37, 155);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(172, 39);
+            this.label25.Size = new System.Drawing.Size(195, 39);
             this.label25.TabIndex = 9;
-            this.label25.Text = "Clock-in :";
+            this.label25.Text = "Clock-out :";
             // 
             // badgeId6
             // 
@@ -693,9 +693,9 @@ namespace NetrayaDashboard
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(40, 154);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(172, 39);
+            this.label19.Size = new System.Drawing.Size(195, 39);
             this.label19.TabIndex = 9;
-            this.label19.Text = "Clock-in :";
+            this.label19.Text = "Clock-out :";
             // 
             // badgeId5
             // 
@@ -765,9 +765,9 @@ namespace NetrayaDashboard
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(39, 154);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(172, 39);
+            this.label18.Size = new System.Drawing.Size(195, 39);
             this.label18.TabIndex = 9;
-            this.label18.Text = "Clock-in :";
+            this.label18.Text = "Clock-out :";
             // 
             // badgeId4
             // 
@@ -1019,6 +1019,27 @@ namespace NetrayaDashboard
             this.roomtb.Text = "Room";
             this.roomtb.Visible = false;
             // 
+            // BackButton
+            // 
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BackButton.Depth = 0;
+            this.BackButton.HighEmphasis = true;
+            this.BackButton.Icon = global::NetrayaDashboard.Properties.Resources.icons8_reply_arrow_30;
+            this.BackButton.Location = new System.Drawing.Point(1777, 161);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.BackButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BackButton.Name = "BackButton";
+            this.BackButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BackButton.Size = new System.Drawing.Size(87, 36);
+            this.BackButton.TabIndex = 267;
+            this.BackButton.Text = "Back";
+            this.BackButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BackButton.UseAccentColor = false;
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1048,36 +1069,15 @@ namespace NetrayaDashboard
             this.indocatorLbl.AutoSize = true;
             this.indocatorLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.indocatorLbl.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.indocatorLbl.ForeColor = System.Drawing.Color.White;
+            this.indocatorLbl.ForeColor = System.Drawing.Color.Red;
             this.indocatorLbl.Location = new System.Drawing.Point(792, 82);
             this.indocatorLbl.Name = "indocatorLbl";
-            this.indocatorLbl.Size = new System.Drawing.Size(392, 117);
+            this.indocatorLbl.Size = new System.Drawing.Size(404, 117);
             this.indocatorLbl.TabIndex = 270;
-            this.indocatorLbl.Text = "MASUK";
+            this.indocatorLbl.Text = "KELUAR";
             this.indocatorLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // BackButton
-            // 
-            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BackButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.BackButton.Depth = 0;
-            this.BackButton.HighEmphasis = true;
-            this.BackButton.Icon = global::NetrayaDashboard.Properties.Resources.icons8_reply_arrow_30;
-            this.BackButton.Location = new System.Drawing.Point(1777, 161);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.BackButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BackButton.Name = "BackButton";
-            this.BackButton.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.BackButton.Size = new System.Drawing.Size(87, 36);
-            this.BackButton.TabIndex = 267;
-            this.BackButton.Text = "Back";
-            this.BackButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.BackButton.UseAccentColor = false;
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
-            // FormMainNine
+            // FormMainNineOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1106,7 +1106,7 @@ namespace NetrayaDashboard
             this.Controls.Add(this.panelMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "FormMainNine";
+            this.Name = "FormMainNineOut";
             this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 2);
             this.Text = "Netraya Attendance";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

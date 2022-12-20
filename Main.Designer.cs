@@ -54,9 +54,10 @@
             "SMT-MAINROOM",
             "SMT-SA",
             "SMT-DIPPING",
+            "SMT-MAINOUT",
             "SMT-OUT"});
             this.cmbRoom.Location = new System.Drawing.Point(94, 124);
-            this.cmbRoom.MaxDropDownItems = 4;
+            this.cmbRoom.MaxDropDownItems = 10;
             this.cmbRoom.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbRoom.Name = "cmbRoom";
             this.cmbRoom.Size = new System.Drawing.Size(303, 49);

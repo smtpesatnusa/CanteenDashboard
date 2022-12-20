@@ -33,7 +33,6 @@ namespace NetrayaDashboard
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
                 form.Show();
-
             }
             else if (cmbRoom.Text == "SMT-DIPPING")
             {
@@ -44,7 +43,14 @@ namespace NetrayaDashboard
             }
             else if (cmbRoom.Text == "SMT-OUT")
             {
-                FormMainNine form = new FormMainNine();
+                FormMainNineOut form = new FormMainNineOut();
+                this.Hide();
+                form.roomtb.Text = cmbRoom.Text;
+                form.Show();
+            }
+            else if (cmbRoom.Text == "SMT-MAINOUT")
+            {
+                FormMainNineOut form = new FormMainNineOut();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
                 form.Show();

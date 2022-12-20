@@ -143,9 +143,10 @@ namespace NetrayaDashboard
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.BackButton = new MaterialSkin.Controls.MaterialButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.indocatorLbl = new System.Windows.Forms.Label();
+            this.BackButton = new MaterialSkin.Controls.MaterialButton();
             this.panelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -171,7 +172,7 @@ namespace NetrayaDashboard
             this.materialLabel24.Depth = 0;
             this.materialLabel24.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel24.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel24.Location = new System.Drawing.Point(304, 174);
+            this.materialLabel24.Location = new System.Drawing.Point(9, 64);
             this.materialLabel24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel24.Name = "materialLabel24";
@@ -191,7 +192,7 @@ namespace NetrayaDashboard
             this.totalLabel.Depth = 0;
             this.totalLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.totalLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.totalLabel.Location = new System.Drawing.Point(475, 174);
+            this.totalLabel.Location = new System.Drawing.Point(180, 64);
             this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.totalLabel.Name = "totalLabel";
@@ -1515,27 +1516,6 @@ namespace NetrayaDashboard
             this.panel23.Size = new System.Drawing.Size(32, 32);
             this.panel23.TabIndex = 96;
             // 
-            // BackButton
-            // 
-            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BackButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.BackButton.Depth = 0;
-            this.BackButton.HighEmphasis = true;
-            this.BackButton.Icon = global::NetrayaDashboard.Properties.Resources.icons8_reply_arrow_30;
-            this.BackButton.Location = new System.Drawing.Point(1250, 162);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.BackButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BackButton.Name = "BackButton";
-            this.BackButton.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.BackButton.Size = new System.Drawing.Size(87, 36);
-            this.BackButton.TabIndex = 266;
-            this.BackButton.Text = "Back";
-            this.BackButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.BackButton.UseAccentColor = false;
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1558,11 +1538,48 @@ namespace NetrayaDashboard
             this.panel16.Size = new System.Drawing.Size(32, 32);
             this.panel16.TabIndex = 95;
             // 
+            // indocatorLbl
+            // 
+            this.indocatorLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.indocatorLbl.AutoSize = true;
+            this.indocatorLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.indocatorLbl.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.indocatorLbl.ForeColor = System.Drawing.Color.White;
+            this.indocatorLbl.Location = new System.Drawing.Point(369, 81);
+            this.indocatorLbl.Name = "indocatorLbl";
+            this.indocatorLbl.Size = new System.Drawing.Size(392, 117);
+            this.indocatorLbl.TabIndex = 0;
+            this.indocatorLbl.Text = "MASUK";
+            this.indocatorLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BackButton
+            // 
+            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BackButton.Depth = 0;
+            this.BackButton.HighEmphasis = true;
+            this.BackButton.Icon = global::NetrayaDashboard.Properties.Resources.icons8_reply_arrow_30;
+            this.BackButton.Location = new System.Drawing.Point(1250, 162);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.BackButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BackButton.Name = "BackButton";
+            this.BackButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BackButton.Size = new System.Drawing.Size(87, 36);
+            this.BackButton.TabIndex = 266;
+            this.BackButton.Text = "Back";
+            this.BackButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BackButton.UseAccentColor = false;
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
             // FormMains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1369, 782);
+            this.Controls.Add(this.indocatorLbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.BackButton);
@@ -1747,6 +1764,7 @@ namespace NetrayaDashboard
         private MaterialSkin.Controls.MaterialButton BackButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel16;
+        public System.Windows.Forms.Label indocatorLbl;
     }
 }
 

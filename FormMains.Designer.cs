@@ -1540,13 +1540,12 @@ namespace NetrayaDashboard
             // 
             // indocatorLbl
             // 
-            this.indocatorLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.indocatorLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.indocatorLbl.AutoSize = true;
             this.indocatorLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.indocatorLbl.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.indocatorLbl.ForeColor = System.Drawing.Color.White;
-            this.indocatorLbl.Location = new System.Drawing.Point(369, 81);
+            this.indocatorLbl.Location = new System.Drawing.Point(99, 81);
             this.indocatorLbl.Name = "indocatorLbl";
             this.indocatorLbl.Size = new System.Drawing.Size(392, 117);
             this.indocatorLbl.TabIndex = 0;

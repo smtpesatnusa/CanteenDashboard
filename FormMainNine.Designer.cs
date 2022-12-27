@@ -37,57 +37,57 @@ namespace NetrayaDashboard
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.badgeId3 = new System.Windows.Forms.Label();
-            this.clockIn3 = new System.Windows.Forms.Label();
             this.linesection3 = new System.Windows.Forms.Label();
             this.namePanel3 = new System.Windows.Forms.Label();
+            this.clockIn3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.clockIn2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.badgeId2 = new System.Windows.Forms.Label();
             this.linesection2 = new System.Windows.Forms.Label();
             this.namePanel2 = new System.Windows.Forms.Label();
+            this.clockIn2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.clockIn1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.badgeId1 = new System.Windows.Forms.Label();
             this.linesection1 = new System.Windows.Forms.Label();
             this.namePanel1 = new System.Windows.Forms.Label();
+            this.clockIn1 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.badgeId9 = new System.Windows.Forms.Label();
-            this.clockIn9 = new System.Windows.Forms.Label();
             this.linesection9 = new System.Windows.Forms.Label();
             this.namePanel9 = new System.Windows.Forms.Label();
+            this.clockIn9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.badgeId8 = new System.Windows.Forms.Label();
-            this.clockIn8 = new System.Windows.Forms.Label();
             this.linesection8 = new System.Windows.Forms.Label();
             this.namePanel8 = new System.Windows.Forms.Label();
+            this.clockIn8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.badgeId7 = new System.Windows.Forms.Label();
-            this.clockIn7 = new System.Windows.Forms.Label();
             this.linesection7 = new System.Windows.Forms.Label();
             this.namePanel7 = new System.Windows.Forms.Label();
+            this.clockIn7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.namePanel6 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.badgeId6 = new System.Windows.Forms.Label();
-            this.clockIn6 = new System.Windows.Forms.Label();
             this.linesection6 = new System.Windows.Forms.Label();
+            this.clockIn6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.badgeId5 = new System.Windows.Forms.Label();
-            this.clockIn5 = new System.Windows.Forms.Label();
             this.linesection5 = new System.Windows.Forms.Label();
             this.namePanel5 = new System.Windows.Forms.Label();
+            this.clockIn5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.badgeId4 = new System.Windows.Forms.Label();
-            this.clockIn4 = new System.Windows.Forms.Label();
             this.linesection4 = new System.Windows.Forms.Label();
             this.namePanel4 = new System.Windows.Forms.Label();
+            this.clockIn4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dateTimeNow = new MaterialSkin.Controls.MaterialLabel();
             this.timeNow = new MaterialSkin.Controls.MaterialLabel();
@@ -108,8 +108,8 @@ namespace NetrayaDashboard
             this.roomtb = new MaterialSkin.Controls.MaterialLabel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.indocatorLbl = new System.Windows.Forms.Label();
             this.BackButton = new MaterialSkin.Controls.MaterialButton();
+            this.selectedDevice = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -171,9 +171,9 @@ namespace NetrayaDashboard
             this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.badgeId3);
-            this.panel3.Controls.Add(this.clockIn3);
             this.panel3.Controls.Add(this.linesection3);
             this.panel3.Controls.Add(this.namePanel3);
+            this.panel3.Controls.Add(this.clockIn3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(1227, 2);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -203,19 +203,6 @@ namespace NetrayaDashboard
             this.badgeId3.TabIndex = 7;
             this.badgeId3.Text = "badgeID";
             // 
-            // clockIn3
-            // 
-            this.clockIn3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn3.AutoSize = true;
-            this.clockIn3.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn3.ForeColor = System.Drawing.Color.White;
-            this.clockIn3.Location = new System.Drawing.Point(291, 179);
-            this.clockIn3.Name = "clockIn3";
-            this.clockIn3.Size = new System.Drawing.Size(209, 93);
-            this.clockIn3.TabIndex = 6;
-            this.clockIn3.Text = "time";
-            // 
             // linesection3
             // 
             this.linesection3.AutoSize = true;
@@ -238,33 +225,33 @@ namespace NetrayaDashboard
             this.namePanel3.TabIndex = 0;
             this.namePanel3.Text = "name";
             // 
+            // clockIn3
+            // 
+            this.clockIn3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn3.AutoSize = true;
+            this.clockIn3.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn3.ForeColor = System.Drawing.Color.White;
+            this.clockIn3.Location = new System.Drawing.Point(291, 179);
+            this.clockIn3.Name = "clockIn3";
+            this.clockIn3.Size = new System.Drawing.Size(209, 93);
+            this.clockIn3.TabIndex = 6;
+            this.clockIn3.Text = "time";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.Controls.Add(this.clockIn2);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.badgeId2);
             this.panel2.Controls.Add(this.linesection2);
             this.panel2.Controls.Add(this.namePanel2);
+            this.panel2.Controls.Add(this.clockIn2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(615, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(606, 280);
             this.panel2.TabIndex = 81;
-            // 
-            // clockIn2
-            // 
-            this.clockIn2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn2.AutoSize = true;
-            this.clockIn2.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn2.ForeColor = System.Drawing.Color.White;
-            this.clockIn2.Location = new System.Drawing.Point(283, 181);
-            this.clockIn2.Name = "clockIn2";
-            this.clockIn2.Size = new System.Drawing.Size(209, 93);
-            this.clockIn2.TabIndex = 7;
-            this.clockIn2.Text = "time";
             // 
             // label16
             // 
@@ -310,34 +297,33 @@ namespace NetrayaDashboard
             this.namePanel2.TabIndex = 0;
             this.namePanel2.Text = "name";
             // 
+            // clockIn2
+            // 
+            this.clockIn2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn2.AutoSize = true;
+            this.clockIn2.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn2.ForeColor = System.Drawing.Color.White;
+            this.clockIn2.Location = new System.Drawing.Point(283, 181);
+            this.clockIn2.Name = "clockIn2";
+            this.clockIn2.Size = new System.Drawing.Size(209, 93);
+            this.clockIn2.TabIndex = 7;
+            this.clockIn2.Text = "time";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Controls.Add(this.clockIn1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.badgeId1);
             this.panel1.Controls.Add(this.linesection1);
             this.panel1.Controls.Add(this.namePanel1);
+            this.panel1.Controls.Add(this.clockIn1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(606, 280);
             this.panel1.TabIndex = 80;
-            // 
-            // clockIn1
-            // 
-            this.clockIn1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn1.AutoSize = true;
-            this.clockIn1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn1.ForeColor = System.Drawing.Color.White;
-            this.clockIn1.Location = new System.Drawing.Point(235, 179);
-            this.clockIn1.Name = "clockIn1";
-            this.clockIn1.Size = new System.Drawing.Size(209, 93);
-            this.clockIn1.TabIndex = 8;
-            this.clockIn1.Text = "time";
-            this.clockIn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -383,14 +369,28 @@ namespace NetrayaDashboard
             this.namePanel1.TabIndex = 0;
             this.namePanel1.Text = "Yuninda Faranika";
             // 
+            // clockIn1
+            // 
+            this.clockIn1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn1.AutoSize = true;
+            this.clockIn1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn1.ForeColor = System.Drawing.Color.White;
+            this.clockIn1.Location = new System.Drawing.Point(235, 179);
+            this.clockIn1.Name = "clockIn1";
+            this.clockIn1.Size = new System.Drawing.Size(209, 93);
+            this.clockIn1.TabIndex = 8;
+            this.clockIn1.Text = "time";
+            this.clockIn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel9.Controls.Add(this.label21);
             this.panel9.Controls.Add(this.badgeId9);
-            this.panel9.Controls.Add(this.clockIn9);
             this.panel9.Controls.Add(this.linesection9);
             this.panel9.Controls.Add(this.namePanel9);
+            this.panel9.Controls.Add(this.clockIn9);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(1227, 570);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -420,19 +420,6 @@ namespace NetrayaDashboard
             this.badgeId9.TabIndex = 8;
             this.badgeId9.Text = "badgeID";
             // 
-            // clockIn9
-            // 
-            this.clockIn9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn9.AutoSize = true;
-            this.clockIn9.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn9.ForeColor = System.Drawing.Color.White;
-            this.clockIn9.Location = new System.Drawing.Point(280, 179);
-            this.clockIn9.Name = "clockIn9";
-            this.clockIn9.Size = new System.Drawing.Size(209, 93);
-            this.clockIn9.TabIndex = 6;
-            this.clockIn9.Text = "time";
-            // 
             // linesection9
             // 
             this.linesection9.AutoSize = true;
@@ -455,14 +442,27 @@ namespace NetrayaDashboard
             this.namePanel9.TabIndex = 0;
             this.namePanel9.Text = "name";
             // 
+            // clockIn9
+            // 
+            this.clockIn9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn9.AutoSize = true;
+            this.clockIn9.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn9.ForeColor = System.Drawing.Color.White;
+            this.clockIn9.Location = new System.Drawing.Point(280, 179);
+            this.clockIn9.Name = "clockIn9";
+            this.clockIn9.Size = new System.Drawing.Size(209, 93);
+            this.clockIn9.TabIndex = 6;
+            this.clockIn9.Text = "time";
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.badgeId8);
-            this.panel8.Controls.Add(this.clockIn8);
             this.panel8.Controls.Add(this.linesection8);
             this.panel8.Controls.Add(this.namePanel8);
+            this.panel8.Controls.Add(this.clockIn8);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(615, 570);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -492,19 +492,6 @@ namespace NetrayaDashboard
             this.badgeId8.TabIndex = 8;
             this.badgeId8.Text = "badgeID";
             // 
-            // clockIn8
-            // 
-            this.clockIn8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn8.AutoSize = true;
-            this.clockIn8.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn8.ForeColor = System.Drawing.Color.White;
-            this.clockIn8.Location = new System.Drawing.Point(283, 179);
-            this.clockIn8.Name = "clockIn8";
-            this.clockIn8.Size = new System.Drawing.Size(209, 93);
-            this.clockIn8.TabIndex = 6;
-            this.clockIn8.Text = "time";
-            // 
             // linesection8
             // 
             this.linesection8.AutoSize = true;
@@ -527,14 +514,27 @@ namespace NetrayaDashboard
             this.namePanel8.TabIndex = 0;
             this.namePanel8.Text = "name";
             // 
+            // clockIn8
+            // 
+            this.clockIn8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn8.AutoSize = true;
+            this.clockIn8.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn8.ForeColor = System.Drawing.Color.White;
+            this.clockIn8.Location = new System.Drawing.Point(283, 179);
+            this.clockIn8.Name = "clockIn8";
+            this.clockIn8.Size = new System.Drawing.Size(209, 93);
+            this.clockIn8.TabIndex = 6;
+            this.clockIn8.Text = "time";
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel7.Controls.Add(this.label23);
             this.panel7.Controls.Add(this.badgeId7);
-            this.panel7.Controls.Add(this.clockIn7);
             this.panel7.Controls.Add(this.linesection7);
             this.panel7.Controls.Add(this.namePanel7);
+            this.panel7.Controls.Add(this.clockIn7);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(3, 570);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -564,19 +564,6 @@ namespace NetrayaDashboard
             this.badgeId7.TabIndex = 8;
             this.badgeId7.Text = "badgeID";
             // 
-            // clockIn7
-            // 
-            this.clockIn7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn7.AutoSize = true;
-            this.clockIn7.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn7.ForeColor = System.Drawing.Color.White;
-            this.clockIn7.Location = new System.Drawing.Point(260, 179);
-            this.clockIn7.Name = "clockIn7";
-            this.clockIn7.Size = new System.Drawing.Size(209, 93);
-            this.clockIn7.TabIndex = 6;
-            this.clockIn7.Text = "time";
-            // 
             // linesection7
             // 
             this.linesection7.AutoSize = true;
@@ -599,14 +586,27 @@ namespace NetrayaDashboard
             this.namePanel7.TabIndex = 0;
             this.namePanel7.Text = "name";
             // 
+            // clockIn7
+            // 
+            this.clockIn7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn7.AutoSize = true;
+            this.clockIn7.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn7.ForeColor = System.Drawing.Color.White;
+            this.clockIn7.Location = new System.Drawing.Point(260, 179);
+            this.clockIn7.Name = "clockIn7";
+            this.clockIn7.Size = new System.Drawing.Size(209, 93);
+            this.clockIn7.TabIndex = 6;
+            this.clockIn7.Text = "time";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel6.Controls.Add(this.namePanel6);
             this.panel6.Controls.Add(this.label25);
             this.panel6.Controls.Add(this.badgeId6);
-            this.panel6.Controls.Add(this.clockIn6);
             this.panel6.Controls.Add(this.linesection6);
+            this.panel6.Controls.Add(this.clockIn6);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(1227, 286);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -647,6 +647,17 @@ namespace NetrayaDashboard
             this.badgeId6.TabIndex = 8;
             this.badgeId6.Text = "badgeID";
             // 
+            // linesection6
+            // 
+            this.linesection6.AutoSize = true;
+            this.linesection6.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linesection6.ForeColor = System.Drawing.Color.White;
+            this.linesection6.Location = new System.Drawing.Point(36, 123);
+            this.linesection6.Name = "linesection6";
+            this.linesection6.Size = new System.Drawing.Size(190, 39);
+            this.linesection6.TabIndex = 5;
+            this.linesection6.Text = "linesection";
+            // 
             // clockIn6
             // 
             this.clockIn6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -660,25 +671,14 @@ namespace NetrayaDashboard
             this.clockIn6.TabIndex = 6;
             this.clockIn6.Text = "time";
             // 
-            // linesection6
-            // 
-            this.linesection6.AutoSize = true;
-            this.linesection6.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linesection6.ForeColor = System.Drawing.Color.White;
-            this.linesection6.Location = new System.Drawing.Point(36, 123);
-            this.linesection6.Name = "linesection6";
-            this.linesection6.Size = new System.Drawing.Size(190, 39);
-            this.linesection6.TabIndex = 5;
-            this.linesection6.Text = "linesection";
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.badgeId5);
-            this.panel5.Controls.Add(this.clockIn5);
             this.panel5.Controls.Add(this.linesection5);
             this.panel5.Controls.Add(this.namePanel5);
+            this.panel5.Controls.Add(this.clockIn5);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(615, 286);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -708,19 +708,6 @@ namespace NetrayaDashboard
             this.badgeId5.TabIndex = 8;
             this.badgeId5.Text = "badgeID";
             // 
-            // clockIn5
-            // 
-            this.clockIn5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn5.AutoSize = true;
-            this.clockIn5.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn5.ForeColor = System.Drawing.Color.White;
-            this.clockIn5.Location = new System.Drawing.Point(283, 179);
-            this.clockIn5.Name = "clockIn5";
-            this.clockIn5.Size = new System.Drawing.Size(209, 93);
-            this.clockIn5.TabIndex = 6;
-            this.clockIn5.Text = "time";
-            // 
             // linesection5
             // 
             this.linesection5.AutoSize = true;
@@ -743,14 +730,27 @@ namespace NetrayaDashboard
             this.namePanel5.TabIndex = 0;
             this.namePanel5.Text = "name";
             // 
+            // clockIn5
+            // 
+            this.clockIn5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn5.AutoSize = true;
+            this.clockIn5.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn5.ForeColor = System.Drawing.Color.White;
+            this.clockIn5.Location = new System.Drawing.Point(283, 179);
+            this.clockIn5.Name = "clockIn5";
+            this.clockIn5.Size = new System.Drawing.Size(209, 93);
+            this.clockIn5.TabIndex = 6;
+            this.clockIn5.Text = "time";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.badgeId4);
-            this.panel4.Controls.Add(this.clockIn4);
             this.panel4.Controls.Add(this.linesection4);
             this.panel4.Controls.Add(this.namePanel4);
+            this.panel4.Controls.Add(this.clockIn4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 286);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -780,19 +780,6 @@ namespace NetrayaDashboard
             this.badgeId4.TabIndex = 8;
             this.badgeId4.Text = "badgeID";
             // 
-            // clockIn4
-            // 
-            this.clockIn4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn4.AutoSize = true;
-            this.clockIn4.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn4.ForeColor = System.Drawing.Color.White;
-            this.clockIn4.Location = new System.Drawing.Point(260, 179);
-            this.clockIn4.Name = "clockIn4";
-            this.clockIn4.Size = new System.Drawing.Size(209, 93);
-            this.clockIn4.TabIndex = 6;
-            this.clockIn4.Text = "time";
-            // 
             // linesection4
             // 
             this.linesection4.AutoSize = true;
@@ -814,6 +801,19 @@ namespace NetrayaDashboard
             this.namePanel4.Size = new System.Drawing.Size(252, 89);
             this.namePanel4.TabIndex = 0;
             this.namePanel4.Text = "name";
+            // 
+            // clockIn4
+            // 
+            this.clockIn4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn4.AutoSize = true;
+            this.clockIn4.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn4.ForeColor = System.Drawing.Color.White;
+            this.clockIn4.Location = new System.Drawing.Point(260, 179);
+            this.clockIn4.Name = "clockIn4";
+            this.clockIn4.Size = new System.Drawing.Size(209, 93);
+            this.clockIn4.TabIndex = 6;
+            this.clockIn4.Text = "time";
             // 
             // timer1
             // 
@@ -1041,21 +1041,6 @@ namespace NetrayaDashboard
             this.panel16.Size = new System.Drawing.Size(32, 32);
             this.panel16.TabIndex = 268;
             // 
-            // indocatorLbl
-            // 
-            this.indocatorLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.indocatorLbl.AutoSize = true;
-            this.indocatorLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.indocatorLbl.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.indocatorLbl.ForeColor = System.Drawing.Color.White;
-            this.indocatorLbl.Location = new System.Drawing.Point(792, 82);
-            this.indocatorLbl.Name = "indocatorLbl";
-            this.indocatorLbl.Size = new System.Drawing.Size(392, 117);
-            this.indocatorLbl.TabIndex = 270;
-            this.indocatorLbl.Text = "MASUK";
-            this.indocatorLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // BackButton
             // 
             this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1077,12 +1062,22 @@ namespace NetrayaDashboard
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // selectedDevice
+            // 
+            this.selectedDevice.AutoSize = true;
+            this.selectedDevice.BackColor = System.Drawing.Color.Transparent;
+            this.selectedDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.selectedDevice.Location = new System.Drawing.Point(223, 129);
+            this.selectedDevice.Name = "selectedDevice";
+            this.selectedDevice.Size = new System.Drawing.Size(393, 57);
+            this.selectedDevice.TabIndex = 270;
+            this.selectedDevice.Text = "(SCAN MASUK)";
+            // 
             // FormMainNine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1081);
-            this.Controls.Add(this.indocatorLbl);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.BackButton);
@@ -1104,6 +1099,7 @@ namespace NetrayaDashboard
             this.Controls.Add(this.timeNow);
             this.Controls.Add(this.dateTimeNow);
             this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.selectedDevice);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMainNine";
@@ -1216,7 +1212,7 @@ namespace NetrayaDashboard
         private MaterialSkin.Controls.MaterialButton BackButton;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel16;
-        public System.Windows.Forms.Label indocatorLbl;
+        public System.Windows.Forms.Label selectedDevice;
     }
 }
 

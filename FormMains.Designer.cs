@@ -145,8 +145,8 @@ namespace NetrayaDashboard
             this.panel23 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.indocatorLbl = new System.Windows.Forms.Label();
             this.BackButton = new MaterialSkin.Controls.MaterialButton();
+            this.selectedDevice = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -1538,20 +1538,6 @@ namespace NetrayaDashboard
             this.panel16.Size = new System.Drawing.Size(32, 32);
             this.panel16.TabIndex = 95;
             // 
-            // indocatorLbl
-            // 
-            this.indocatorLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.indocatorLbl.AutoSize = true;
-            this.indocatorLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.indocatorLbl.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.indocatorLbl.ForeColor = System.Drawing.Color.White;
-            this.indocatorLbl.Location = new System.Drawing.Point(99, 81);
-            this.indocatorLbl.Name = "indocatorLbl";
-            this.indocatorLbl.Size = new System.Drawing.Size(392, 117);
-            this.indocatorLbl.TabIndex = 0;
-            this.indocatorLbl.Text = "MASUK";
-            this.indocatorLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // BackButton
             // 
             this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1573,12 +1559,22 @@ namespace NetrayaDashboard
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // selectedDevice
+            // 
+            this.selectedDevice.AutoSize = true;
+            this.selectedDevice.BackColor = System.Drawing.Color.Transparent;
+            this.selectedDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.selectedDevice.Location = new System.Drawing.Point(233, 131);
+            this.selectedDevice.Name = "selectedDevice";
+            this.selectedDevice.Size = new System.Drawing.Size(393, 57);
+            this.selectedDevice.TabIndex = 267;
+            this.selectedDevice.Text = "(SCAN MASUK)";
+            // 
             // FormMains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1369, 782);
-            this.Controls.Add(this.indocatorLbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.BackButton);
@@ -1601,6 +1597,7 @@ namespace NetrayaDashboard
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.materialLabel24);
+            this.Controls.Add(this.selectedDevice);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMains";
@@ -1763,7 +1760,7 @@ namespace NetrayaDashboard
         private MaterialSkin.Controls.MaterialButton BackButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel16;
-        public System.Windows.Forms.Label indocatorLbl;
+        public System.Windows.Forms.Label selectedDevice;
     }
 }
 

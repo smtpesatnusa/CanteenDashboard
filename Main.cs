@@ -24,6 +24,7 @@ namespace NetrayaDashboard
             if (cmbRoom.Text == "SMT-MAINROOM")
             {
                 FormMains formMains = new FormMains();
+                formMains.Text += " ("+cmbRoom.Text+ ")";
                 this.Hide();
                 formMains.Show();
             }
@@ -32,6 +33,7 @@ namespace NetrayaDashboard
                 FormMainNine form = new FormMainNine();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
+                form.Text += " (" + cmbRoom.Text + ")";
                 form.Show();
             }
             else if (cmbRoom.Text == "SMT-DIPPING")
@@ -39,6 +41,7 @@ namespace NetrayaDashboard
                 FormMainNine form = new FormMainNine();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
+                form.Text += " (" + cmbRoom.Text + ")";
                 form.Show();                
             }
             else if (cmbRoom.Text == "SMT-OUT")
@@ -46,6 +49,7 @@ namespace NetrayaDashboard
                 FormMainNineOut form = new FormMainNineOut();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
+                form.Text += " (" + cmbRoom.Text + ")";
                 form.Show();
             }
             else if (cmbRoom.Text == "SMT-MAINOUT")
@@ -53,6 +57,7 @@ namespace NetrayaDashboard
                 FormMainNineOut form = new FormMainNineOut();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
+                form.Text += " (" + cmbRoom.Text + ")";
                 form.Show();
             }
         }

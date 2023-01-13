@@ -311,11 +311,11 @@ namespace NetrayaDashboard
             // namePanel15
             // 
             this.namePanel15.AutoSize = true;
-            this.namePanel15.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel15.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel15.ForeColor = System.Drawing.Color.Black;
             this.namePanel15.Location = new System.Drawing.Point(19, 17);
             this.namePanel15.Name = "namePanel15";
-            this.namePanel15.Size = new System.Drawing.Size(111, 39);
+            this.namePanel15.Size = new System.Drawing.Size(134, 47);
             this.namePanel15.TabIndex = 0;
             this.namePanel15.Text = "name";
             // 
@@ -383,11 +383,11 @@ namespace NetrayaDashboard
             // namePanel14
             // 
             this.namePanel14.AutoSize = true;
-            this.namePanel14.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel14.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel14.ForeColor = System.Drawing.Color.Black;
             this.namePanel14.Location = new System.Drawing.Point(19, 17);
             this.namePanel14.Name = "namePanel14";
-            this.namePanel14.Size = new System.Drawing.Size(111, 39);
+            this.namePanel14.Size = new System.Drawing.Size(134, 47);
             this.namePanel14.TabIndex = 0;
             this.namePanel14.Text = "name";
             // 
@@ -455,11 +455,11 @@ namespace NetrayaDashboard
             // namePanel13
             // 
             this.namePanel13.AutoSize = true;
-            this.namePanel13.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel13.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel13.ForeColor = System.Drawing.Color.Black;
             this.namePanel13.Location = new System.Drawing.Point(19, 17);
             this.namePanel13.Name = "namePanel13";
-            this.namePanel13.Size = new System.Drawing.Size(111, 39);
+            this.namePanel13.Size = new System.Drawing.Size(134, 47);
             this.namePanel13.TabIndex = 0;
             this.namePanel13.Text = "name";
             // 
@@ -527,11 +527,11 @@ namespace NetrayaDashboard
             // namePanel4
             // 
             this.namePanel4.AutoSize = true;
-            this.namePanel4.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel4.ForeColor = System.Drawing.Color.Black;
             this.namePanel4.Location = new System.Drawing.Point(19, 15);
             this.namePanel4.Name = "namePanel4";
-            this.namePanel4.Size = new System.Drawing.Size(111, 39);
+            this.namePanel4.Size = new System.Drawing.Size(134, 47);
             this.namePanel4.TabIndex = 0;
             this.namePanel4.Text = "name";
             // 
@@ -599,11 +599,11 @@ namespace NetrayaDashboard
             // namePanel3
             // 
             this.namePanel3.AutoSize = true;
-            this.namePanel3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel3.ForeColor = System.Drawing.Color.Black;
             this.namePanel3.Location = new System.Drawing.Point(15, 15);
             this.namePanel3.Name = "namePanel3";
-            this.namePanel3.Size = new System.Drawing.Size(111, 39);
+            this.namePanel3.Size = new System.Drawing.Size(134, 47);
             this.namePanel3.TabIndex = 0;
             this.namePanel3.Text = "name";
             // 
@@ -671,11 +671,11 @@ namespace NetrayaDashboard
             // namePanel2
             // 
             this.namePanel2.AutoSize = true;
-            this.namePanel2.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel2.ForeColor = System.Drawing.Color.Black;
             this.namePanel2.Location = new System.Drawing.Point(15, 15);
             this.namePanel2.Name = "namePanel2";
-            this.namePanel2.Size = new System.Drawing.Size(111, 39);
+            this.namePanel2.Size = new System.Drawing.Size(134, 47);
             this.namePanel2.TabIndex = 0;
             this.namePanel2.Text = "name";
             // 
@@ -743,11 +743,11 @@ namespace NetrayaDashboard
             // namePanel1
             // 
             this.namePanel1.AutoSize = true;
-            this.namePanel1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel1.ForeColor = System.Drawing.Color.Black;
             this.namePanel1.Location = new System.Drawing.Point(19, 17);
             this.namePanel1.Name = "namePanel1";
-            this.namePanel1.Size = new System.Drawing.Size(298, 39);
+            this.namePanel1.Size = new System.Drawing.Size(357, 47);
             this.namePanel1.TabIndex = 0;
             this.namePanel1.Text = "Yuninda Faranika";
             // 
@@ -815,11 +815,11 @@ namespace NetrayaDashboard
             // namePanel5
             // 
             this.namePanel5.AutoSize = true;
-            this.namePanel5.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel5.ForeColor = System.Drawing.Color.Black;
             this.namePanel5.Location = new System.Drawing.Point(17, 15);
             this.namePanel5.Name = "namePanel5";
-            this.namePanel5.Size = new System.Drawing.Size(111, 39);
+            this.namePanel5.Size = new System.Drawing.Size(134, 47);
             this.namePanel5.TabIndex = 0;
             this.namePanel5.Text = "name";
             // 
@@ -887,11 +887,11 @@ namespace NetrayaDashboard
             // namePanel6
             // 
             this.namePanel6.AutoSize = true;
-            this.namePanel6.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel6.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel6.ForeColor = System.Drawing.Color.Black;
             this.namePanel6.Location = new System.Drawing.Point(19, 17);
             this.namePanel6.Name = "namePanel6";
-            this.namePanel6.Size = new System.Drawing.Size(111, 39);
+            this.namePanel6.Size = new System.Drawing.Size(134, 47);
             this.namePanel6.TabIndex = 0;
             this.namePanel6.Text = "name";
             // 
@@ -959,11 +959,11 @@ namespace NetrayaDashboard
             // namePanel7
             // 
             this.namePanel7.AutoSize = true;
-            this.namePanel7.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel7.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel7.ForeColor = System.Drawing.Color.Black;
             this.namePanel7.Location = new System.Drawing.Point(19, 17);
             this.namePanel7.Name = "namePanel7";
-            this.namePanel7.Size = new System.Drawing.Size(111, 39);
+            this.namePanel7.Size = new System.Drawing.Size(134, 47);
             this.namePanel7.TabIndex = 0;
             this.namePanel7.Text = "name";
             // 
@@ -1031,11 +1031,11 @@ namespace NetrayaDashboard
             // namePanel8
             // 
             this.namePanel8.AutoSize = true;
-            this.namePanel8.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel8.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel8.ForeColor = System.Drawing.Color.Black;
             this.namePanel8.Location = new System.Drawing.Point(19, 17);
             this.namePanel8.Name = "namePanel8";
-            this.namePanel8.Size = new System.Drawing.Size(111, 39);
+            this.namePanel8.Size = new System.Drawing.Size(134, 47);
             this.namePanel8.TabIndex = 0;
             this.namePanel8.Text = "name";
             // 
@@ -1103,11 +1103,11 @@ namespace NetrayaDashboard
             // namePanel9
             // 
             this.namePanel9.AutoSize = true;
-            this.namePanel9.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel9.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel9.ForeColor = System.Drawing.Color.Black;
             this.namePanel9.Location = new System.Drawing.Point(19, 17);
             this.namePanel9.Name = "namePanel9";
-            this.namePanel9.Size = new System.Drawing.Size(111, 39);
+            this.namePanel9.Size = new System.Drawing.Size(134, 47);
             this.namePanel9.TabIndex = 0;
             this.namePanel9.Text = "name";
             // 
@@ -1175,11 +1175,11 @@ namespace NetrayaDashboard
             // namePanel10
             // 
             this.namePanel10.AutoSize = true;
-            this.namePanel10.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel10.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel10.ForeColor = System.Drawing.Color.Black;
             this.namePanel10.Location = new System.Drawing.Point(19, 17);
             this.namePanel10.Name = "namePanel10";
-            this.namePanel10.Size = new System.Drawing.Size(111, 39);
+            this.namePanel10.Size = new System.Drawing.Size(134, 47);
             this.namePanel10.TabIndex = 0;
             this.namePanel10.Text = "name";
             // 
@@ -1247,11 +1247,11 @@ namespace NetrayaDashboard
             // namePanel11
             // 
             this.namePanel11.AutoSize = true;
-            this.namePanel11.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel11.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel11.ForeColor = System.Drawing.Color.Black;
             this.namePanel11.Location = new System.Drawing.Point(19, 17);
             this.namePanel11.Name = "namePanel11";
-            this.namePanel11.Size = new System.Drawing.Size(111, 39);
+            this.namePanel11.Size = new System.Drawing.Size(134, 47);
             this.namePanel11.TabIndex = 0;
             this.namePanel11.Text = "name";
             // 
@@ -1319,11 +1319,11 @@ namespace NetrayaDashboard
             // namePanel12
             // 
             this.namePanel12.AutoSize = true;
-            this.namePanel12.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel12.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel12.ForeColor = System.Drawing.Color.Black;
             this.namePanel12.Location = new System.Drawing.Point(19, 17);
             this.namePanel12.Name = "namePanel12";
-            this.namePanel12.Size = new System.Drawing.Size(111, 39);
+            this.namePanel12.Size = new System.Drawing.Size(134, 47);
             this.namePanel12.TabIndex = 0;
             this.namePanel12.Text = "name";
             // 

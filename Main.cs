@@ -23,10 +23,15 @@ namespace NetrayaDashboard
         {
             if (cmbRoom.Text == "SMT-MAINROOM")
             {
-                FormMains formMains = new FormMains();
-                formMains.Text += " ("+cmbRoom.Text+ ")";
+                //FormMains formMains = new FormMains();
+                //formMains.Text += " ("+cmbRoom.Text+ ")";
+                //this.Hide();
+                //formMains.Show();
+
+                Dashboard dashboard = new Dashboard();
+                dashboard.Text += " (" + cmbRoom.Text + ")";
                 this.Hide();
-                formMains.Show();
+                dashboard.Show();
             }
             else if (cmbRoom.Text == "SMT-SA")
             {

@@ -244,7 +244,7 @@ namespace NetrayaDashboard
                             namePanel14.Text = elipsisText(employee14);
                             badgeId14.Text = badge14;
                             linesection14.Text = lineCode14 + " (" + section14 + ")";
-                            label24.Text = time14;
+                            clockIn14.Text = time14;
                             panelColor(panel14, namePanel14, section14);
                         }
                         if (r > 14)
@@ -257,7 +257,7 @@ namespace NetrayaDashboard
                             namePanel15.Text = elipsisText(employee15);
                             badgeId15.Text = badge15;
                             linesection15.Text = lineCode15 + " (" + section15 + ")";
-                            label26.Text = time15;
+                            clockIn15.Text = time15;
                             panelColor(panel15, namePanel15, section15);
                         }
                     }

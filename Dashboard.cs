@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,22 +21,25 @@ namespace NetrayaDashboard
         string section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12, section13, section14, section15, section16;
         string time1, time2, time3, time4, time5, time6, time7, time8, time9, time10, time11, time12, time13, time14, time15, time16;
 
+
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void mainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            this.Hide();
+            main.Show();
         }
 
         private void timer_Tick(object sender, System.EventArgs e)
         {
             currentDate.Text = DateTime.Now.ToString("dddd, dd-MM-yyyy");
             currentTime.Text = DateTime.Now.ToString("HH:mm");
-            absent();
-
-            //// refresh latelist
-            //if (DateTime.Now.ToString("mm") == "00" || DateTime.Now.ToString("mm") == "30")
-            //{
-            //    lateList();
-            //}
+            //absent();
+            EmployeeData();
         }
         private void timerScroll_Tick(object sender, EventArgs e)
         {
@@ -49,7 +53,13 @@ namespace NetrayaDashboard
             if (dataGridViewLate.CurrentRow.Index + 1 == dataGridViewLate.RowCount)
             {
                 dataGridViewLate.CurrentCell = dataGridViewLate.Rows[0].Cells[0];
-            }
+            }            
+        }
+        private void timerRefreshLate_Tick(object sender, EventArgs e)
+        {
+            // refresh late and reupdate latelist
+            refreshLate();
+            lateList();
         }
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,10 +81,10 @@ namespace NetrayaDashboard
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            // display top 16 data in tbl_log
-            absent();
-            lateList();
-            //EmployeeData();
+            //// display top 16 data in tbl_log
+            //absent();
+            //lateList();
+            EmployeeData();
         }
         class EmployeeDetail
         {
@@ -94,6 +104,10 @@ namespace NetrayaDashboard
             {
                 string koneksi = ConnectionDB.strProvider;
                 myConn = new MySqlConnection(koneksi);
+                myConn.Open();
+
+                var stopwatch = new Stopwatch();
+                stopwatch.Start();
 
                 // arrayemployeeata
                 var employee = new Dictionary<string, EmployeeDetail>();
@@ -114,7 +128,7 @@ namespace NetrayaDashboard
                                 badgeId = dt.Rows[i]["badgeId"].ToString(),
                                 name = dt.Rows[i]["name"].ToString(),
                                 level = dt.Rows[i]["level"].ToString(),
-                                linecode = dt.Rows[i]["linecode"].ToString(),
+                                linecode = dt.Rows[i]["linecode"].ToString()+"("+ dt.Rows[i]["description"].ToString() + ")",
                                 descr = dt.Rows[i]["description"].ToString(),
                                 timelog = dt.Rows[i]["timelog"].ToString(),
                                 sequence = Convert.ToInt32(dt.Rows[i]["sequence"].ToString())
@@ -123,7 +137,7 @@ namespace NetrayaDashboard
                     }
                 }
 
-                // update data InEmployee
+                // select rfid log
                 string queryInEmployee = "SELECT * FROM clockIn_Mainroom";
 
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryInEmployee, myConn))
@@ -137,20 +151,36 @@ namespace NetrayaDashboard
                         {
                             int sequences = dt.Rows.Count - i;
                             string rfidno = dt.Rows[i]["rfidNo"].ToString();
-                            string timelogs = DateTime.Parse(dt.Rows[i]["timelog"].ToString()).ToString("yyyy-MM-dd HH:mm:ss");
-                            employee[rfidno].timelog = timelogs;
-                            employee[rfidno].sequence = sequences;
+                            string timelogs = DateTime.Parse(dt.Rows[i]["timelog"].ToString()).ToString("yyyy-MM-dd HH:mm:ss");                            
+
+                            // check rfid tsb di data employee
+                            string query = "SELECT rfidNo FROM tbl_employee WHERE rfidNo = '"+rfidno+"'";
+                            using (MySqlDataAdapter adpt1 = new MySqlDataAdapter(query, myConn))
+                            {
+                                DataTable dt1 = new DataTable();
+                                adpt1.Fill(dt1);
+
+                                // jika rfid tsb ada di data employee update data array
+                                if (dt1.Rows.Count > 0)
+                                {
+                                    employee[rfidno].timelog = timelogs;
+                                    employee[rfidno].sequence = sequences;
+                                }
+                            }                            
                         }
                     }
                 }
 
-                foreach (var k in employee.OrderByDescending(x => x.Value.sequence))
+                foreach (var k in employee.OrderByDescending(x => x.Value.sequence).Take(16))
                 {
                     //Console.WriteLine(k);
-                    Console.WriteLine(k.Value.name + " " + k.Value.timelog + " " + k.Value.sequence);
+                    Console.WriteLine(k.Value.badgeId + " " + k.Value.name + " " + k.Value.linecode + " " + k.Value.timelog + " " + k.Value.sequence);
                 }
 
-                ////////employee.OrderByDescending(item => item.Value.name);
+                stopwatch.Stop();
+                Debug.WriteLine(" inserts took " + stopwatch.ElapsedMilliseconds + " ms");
+
+                //employee.OrderByDescending(item => item.Value.sequence);
 
                 //for (int i = 0; i < employee.Count; i++)
                 //{
@@ -160,7 +190,8 @@ namespace NetrayaDashboard
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("displayData: " + ex.Message);
+                myConn.Close();
+                MessageBox.Show("displayData: " + ex.Message);
             }
         }
 
@@ -196,7 +227,28 @@ namespace NetrayaDashboard
         private void dataGridViewLate_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             dataGridViewLate.Columns[1].DefaultCellStyle.Format = "HH:mm";
+            dataGridViewLate.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;          
         }
+
+        public void refreshLate()
+        {
+            // reset datagridview
+            DataGridView[] dgv = { dataGridViewLate };
+            for (int i = 0; i < dgv.Length; i++)
+            {
+                // remove data in datagridview result
+                dgv[i].DataSource = null;
+                dgv[i].Refresh();
+
+                while (dgv[i].Columns.Count > 0)
+                {
+                    dgv[i].Columns.RemoveAt(0);
+                }
+                dgv[i].Update();
+                dgv[i].Refresh();
+            }
+        }
+
 
         public void lateList()
         {
@@ -223,13 +275,13 @@ namespace NetrayaDashboard
                         DataGridViewImageColumn image = new DataGridViewImageColumn();
                         dataGridViewLate.Columns.Add(image);
                         image.Name = "employeePict";
-                        image.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                        image.ImageLayout = DataGridViewImageCellLayout.Zoom;                        
 
                         for (int i = 0; i < dt.Rows.Count; i++)
                         {
                             string employee = dt.Rows[i]["employee"].ToString();
                             string[] words = employee.Split('(');
-                            string badges = words[1].Replace(")","");
+                            string badges = words[1].Replace(")", "");
                             if (File.Exists(@"\\192.168.192.254\SystemSupport\Netraya\EmplFoto\" + badges + ".jpg"))
                             {
                                 dataGridViewLate[2, i].Value = Image.FromFile(@"\\192.168.192.254\SystemSupport\Netraya\EmplFoto\" + badges + ".jpg");
@@ -237,10 +289,12 @@ namespace NetrayaDashboard
                             else
                             {
                                 dataGridViewLate[2, i].Value = Image.FromFile(@"\\192.168.192.254\SystemSupport\Netraya\EmplFoto\default.png");
-                            }                            
+                            }
                             //Console.WriteLine(badges);
                         }
-                    }        
+                        // auto size image column after populate data
+                        image.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+                    }
                 }
             }
             catch (Exception ex)

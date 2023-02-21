@@ -131,6 +131,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DashboardNine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardNine.Designer.cs">
+      <DependentUpon>DashboardNine.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainNineOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <Compile Include="Setup\Helper.cs" />
     <Compile Include="Setup\MessagesHelper.cs" />
     <Compile Include="Setup\QueryLibrary.cs" />
+    <EmbeddedResource Include="DashboardNine.resx">
+      <DependentUpon>DashboardNine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainNineOut.resx">
       <DependentUpon>FormMainNineOut.cs</DependentUpon>
     </EmbeddedResource>

@@ -100,7 +100,7 @@ namespace NetrayaDashboard
         public void EmployeeData()
         {
             try
-            {
+            {               
                 string koneksi = ConnectionDB.strProvider;
                 myConn = new MySqlConnection(koneksi);
                 myConn.Open();

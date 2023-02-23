@@ -1,7 +1,7 @@
 ﻿
 namespace NetrayaDashboard
 {
-    partial class DashboardNine
+    partial class DashboardNineOut
     {
         /// <summary>
         /// Required designer variable.
@@ -30,147 +30,147 @@ namespace NetrayaDashboard
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardNine));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardNineOut));
             this.panelHeader = new System.Windows.Forms.Panel();
             this.roomtb = new MaterialSkin.Controls.MaterialLabel();
             this.currentTime = new System.Windows.Forms.Label();
             this.currentDate = new System.Windows.Forms.Label();
+            this.pictureBoxHeader = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.namePanel3 = new System.Windows.Forms.Label();
             this.badgeId3 = new System.Windows.Forms.Label();
             this.linesection3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.header3 = new System.Windows.Forms.Panel();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.clockIn3 = new System.Windows.Forms.Label();
             this.clock3 = new System.Windows.Forms.Label();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.namePanel2 = new System.Windows.Forms.Label();
             this.badgeId2 = new System.Windows.Forms.Label();
             this.linesection2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.header2 = new System.Windows.Forms.Panel();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.clockIn2 = new System.Windows.Forms.Label();
             this.clock2 = new System.Windows.Forms.Label();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.namePanel1 = new System.Windows.Forms.Label();
             this.badgeId1 = new System.Windows.Forms.Label();
             this.linesection1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.header1 = new System.Windows.Forms.Panel();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.clockIn1 = new System.Windows.Forms.Label();
             this.clock1 = new System.Windows.Forms.Label();
             this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.namePanel9 = new System.Windows.Forms.Label();
             this.badgeId9 = new System.Windows.Forms.Label();
             this.linesection9 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.header9 = new System.Windows.Forms.Panel();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.clockIn9 = new System.Windows.Forms.Label();
             this.clock9 = new System.Windows.Forms.Label();
             this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.namePanel8 = new System.Windows.Forms.Label();
             this.badgeId8 = new System.Windows.Forms.Label();
             this.linesection8 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.header8 = new System.Windows.Forms.Panel();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.clockIn8 = new System.Windows.Forms.Label();
             this.clock8 = new System.Windows.Forms.Label();
             this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.namePanel7 = new System.Windows.Forms.Label();
             this.badgeId7 = new System.Windows.Forms.Label();
             this.linesection7 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.header7 = new System.Windows.Forms.Panel();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.clockIn7 = new System.Windows.Forms.Label();
             this.clock7 = new System.Windows.Forms.Label();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.namePanel6 = new System.Windows.Forms.Label();
             this.badgeId6 = new System.Windows.Forms.Label();
             this.linesection6 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.header6 = new System.Windows.Forms.Panel();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.clockIn6 = new System.Windows.Forms.Label();
             this.clock6 = new System.Windows.Forms.Label();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.namePanel5 = new System.Windows.Forms.Label();
             this.badgeId5 = new System.Windows.Forms.Label();
             this.linesection5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.header5 = new System.Windows.Forms.Panel();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.clockIn5 = new System.Windows.Forms.Label();
             this.clock5 = new System.Windows.Forms.Label();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.namePanel4 = new System.Windows.Forms.Label();
             this.badgeId4 = new System.Windows.Forms.Label();
             this.linesection4 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.header4 = new System.Windows.Forms.Panel();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.clockIn4 = new System.Windows.Forms.Label();
             this.clock4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHeader = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.materialCard3.SuspendLayout();
-            this.header3.SuspendLayout();
-            this.materialCard2.SuspendLayout();
-            this.header2.SuspendLayout();
-            this.materialCard1.SuspendLayout();
-            this.header1.SuspendLayout();
-            this.materialCard9.SuspendLayout();
-            this.header9.SuspendLayout();
-            this.materialCard8.SuspendLayout();
-            this.header8.SuspendLayout();
-            this.materialCard7.SuspendLayout();
-            this.header7.SuspendLayout();
-            this.materialCard6.SuspendLayout();
-            this.header6.SuspendLayout();
-            this.materialCard5.SuspendLayout();
-            this.header5.SuspendLayout();
-            this.materialCard4.SuspendLayout();
-            this.header4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.header3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            this.materialCard2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.header2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.header1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            this.materialCard9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.header9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            this.materialCard8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.header8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            this.materialCard7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.header7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            this.materialCard6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.header6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            this.materialCard5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.header5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            this.materialCard4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.header4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -226,6 +226,17 @@ namespace NetrayaDashboard
             this.currentDate.Size = new System.Drawing.Size(122, 23);
             this.currentDate.TabIndex = 103;
             this.currentDate.Text = "currentDate";
+            // 
+            // pictureBoxHeader
+            // 
+            this.pictureBoxHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxHeader.Image = global::NetrayaDashboard.Properties.Resources.Navbar_Attendance;
+            this.pictureBoxHeader.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxHeader.Name = "pictureBoxHeader";
+            this.pictureBoxHeader.Size = new System.Drawing.Size(1440, 100);
+            this.pictureBoxHeader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxHeader.TabIndex = 0;
+            this.pictureBoxHeader.TabStop = false;
             // 
             // timer
             // 
@@ -301,6 +312,18 @@ namespace NetrayaDashboard
             this.materialCard3.Size = new System.Drawing.Size(456, 241);
             this.materialCard3.TabIndex = 2;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox3.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
             // namePanel3
             // 
             this.namePanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -359,6 +382,16 @@ namespace NetrayaDashboard
             this.header3.Size = new System.Drawing.Size(428, 54);
             this.header3.TabIndex = 8;
             // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox30.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox30.TabIndex = 11;
+            this.pictureBox30.TabStop = false;
+            // 
             // clockIn3
             // 
             this.clockIn3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -379,9 +412,9 @@ namespace NetrayaDashboard
             this.clock3.ForeColor = System.Drawing.Color.DimGray;
             this.clock3.Location = new System.Drawing.Point(95, 21);
             this.clock3.Name = "clock3";
-            this.clock3.Size = new System.Drawing.Size(58, 16);
+            this.clock3.Size = new System.Drawing.Size(69, 16);
             this.clock3.TabIndex = 9;
-            this.clock3.Text = "Clock In";
+            this.clock3.Text = "Clock Out";
             // 
             // materialCard2
             // 
@@ -402,6 +435,18 @@ namespace NetrayaDashboard
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard2.Size = new System.Drawing.Size(454, 241);
             this.materialCard2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox2.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // namePanel2
             // 
@@ -461,6 +506,16 @@ namespace NetrayaDashboard
             this.header2.Size = new System.Drawing.Size(426, 54);
             this.header2.TabIndex = 8;
             // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox29.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox29.TabIndex = 8;
+            this.pictureBox29.TabStop = false;
+            // 
             // clockIn2
             // 
             this.clockIn2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -481,9 +536,9 @@ namespace NetrayaDashboard
             this.clock2.ForeColor = System.Drawing.Color.DimGray;
             this.clock2.Location = new System.Drawing.Point(88, 21);
             this.clock2.Name = "clock2";
-            this.clock2.Size = new System.Drawing.Size(58, 16);
+            this.clock2.Size = new System.Drawing.Size(69, 16);
             this.clock2.TabIndex = 6;
-            this.clock2.Text = "Clock In";
+            this.clock2.Text = "Clock Out";
             // 
             // materialCard1
             // 
@@ -504,6 +559,18 @@ namespace NetrayaDashboard
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard1.Size = new System.Drawing.Size(454, 241);
             this.materialCard1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // namePanel1
             // 
@@ -563,6 +630,16 @@ namespace NetrayaDashboard
             this.header1.Size = new System.Drawing.Size(426, 54);
             this.header1.TabIndex = 0;
             // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox28.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox28.TabIndex = 5;
+            this.pictureBox28.TabStop = false;
+            // 
             // clockIn1
             // 
             this.clockIn1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -583,9 +660,9 @@ namespace NetrayaDashboard
             this.clock1.ForeColor = System.Drawing.Color.DimGray;
             this.clock1.Location = new System.Drawing.Point(88, 21);
             this.clock1.Name = "clock1";
-            this.clock1.Size = new System.Drawing.Size(58, 16);
+            this.clock1.Size = new System.Drawing.Size(69, 16);
             this.clock1.TabIndex = 3;
-            this.clock1.Text = "Clock In";
+            this.clock1.Text = "Clock Out";
             // 
             // materialCard9
             // 
@@ -606,6 +683,18 @@ namespace NetrayaDashboard
             this.materialCard9.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard9.Size = new System.Drawing.Size(456, 241);
             this.materialCard9.TabIndex = 8;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox9.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox9.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 9;
+            this.pictureBox9.TabStop = false;
             // 
             // namePanel9
             // 
@@ -665,6 +754,16 @@ namespace NetrayaDashboard
             this.header9.Size = new System.Drawing.Size(428, 54);
             this.header9.TabIndex = 8;
             // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox36.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox36.TabIndex = 14;
+            this.pictureBox36.TabStop = false;
+            // 
             // clockIn9
             // 
             this.clockIn9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -685,9 +784,9 @@ namespace NetrayaDashboard
             this.clock9.ForeColor = System.Drawing.Color.DimGray;
             this.clock9.Location = new System.Drawing.Point(95, 22);
             this.clock9.Name = "clock9";
-            this.clock9.Size = new System.Drawing.Size(58, 16);
+            this.clock9.Size = new System.Drawing.Size(69, 16);
             this.clock9.TabIndex = 12;
-            this.clock9.Text = "Clock In";
+            this.clock9.Text = "Clock Out";
             // 
             // materialCard8
             // 
@@ -708,6 +807,18 @@ namespace NetrayaDashboard
             this.materialCard8.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard8.Size = new System.Drawing.Size(454, 241);
             this.materialCard8.TabIndex = 7;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox8.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox8.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
             // 
             // namePanel8
             // 
@@ -767,6 +878,16 @@ namespace NetrayaDashboard
             this.header8.Size = new System.Drawing.Size(426, 54);
             this.header8.TabIndex = 8;
             // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox35.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox35.TabIndex = 11;
+            this.pictureBox35.TabStop = false;
+            // 
             // clockIn8
             // 
             this.clockIn8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -787,9 +908,9 @@ namespace NetrayaDashboard
             this.clock8.ForeColor = System.Drawing.Color.DimGray;
             this.clock8.Location = new System.Drawing.Point(88, 22);
             this.clock8.Name = "clock8";
-            this.clock8.Size = new System.Drawing.Size(58, 16);
+            this.clock8.Size = new System.Drawing.Size(69, 16);
             this.clock8.TabIndex = 9;
-            this.clock8.Text = "Clock In";
+            this.clock8.Text = "Clock Out";
             // 
             // materialCard7
             // 
@@ -810,6 +931,18 @@ namespace NetrayaDashboard
             this.materialCard7.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard7.Size = new System.Drawing.Size(454, 241);
             this.materialCard7.TabIndex = 6;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox7.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox7.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 9;
+            this.pictureBox7.TabStop = false;
             // 
             // namePanel7
             // 
@@ -869,6 +1002,16 @@ namespace NetrayaDashboard
             this.header7.Size = new System.Drawing.Size(426, 54);
             this.header7.TabIndex = 8;
             // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox34.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox34.TabIndex = 11;
+            this.pictureBox34.TabStop = false;
+            // 
             // clockIn7
             // 
             this.clockIn7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -889,9 +1032,9 @@ namespace NetrayaDashboard
             this.clock7.ForeColor = System.Drawing.Color.DimGray;
             this.clock7.Location = new System.Drawing.Point(88, 22);
             this.clock7.Name = "clock7";
-            this.clock7.Size = new System.Drawing.Size(58, 16);
+            this.clock7.Size = new System.Drawing.Size(69, 16);
             this.clock7.TabIndex = 9;
-            this.clock7.Text = "Clock In";
+            this.clock7.Text = "Clock Out";
             // 
             // materialCard6
             // 
@@ -912,6 +1055,18 @@ namespace NetrayaDashboard
             this.materialCard6.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard6.Size = new System.Drawing.Size(456, 241);
             this.materialCard6.TabIndex = 5;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox6.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox6.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
             // 
             // namePanel6
             // 
@@ -971,6 +1126,16 @@ namespace NetrayaDashboard
             this.header6.Size = new System.Drawing.Size(428, 54);
             this.header6.TabIndex = 8;
             // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox33.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox33.TabIndex = 11;
+            this.pictureBox33.TabStop = false;
+            // 
             // clockIn6
             // 
             this.clockIn6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -991,9 +1156,9 @@ namespace NetrayaDashboard
             this.clock6.ForeColor = System.Drawing.Color.DimGray;
             this.clock6.Location = new System.Drawing.Point(95, 24);
             this.clock6.Name = "clock6";
-            this.clock6.Size = new System.Drawing.Size(58, 16);
+            this.clock6.Size = new System.Drawing.Size(69, 16);
             this.clock6.TabIndex = 9;
-            this.clock6.Text = "Clock In";
+            this.clock6.Text = "Clock Out";
             // 
             // materialCard5
             // 
@@ -1014,6 +1179,18 @@ namespace NetrayaDashboard
             this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard5.Size = new System.Drawing.Size(454, 241);
             this.materialCard5.TabIndex = 4;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox5.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox5.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
             // 
             // namePanel5
             // 
@@ -1073,6 +1250,16 @@ namespace NetrayaDashboard
             this.header5.Size = new System.Drawing.Size(426, 54);
             this.header5.TabIndex = 8;
             // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox32.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox32.TabIndex = 11;
+            this.pictureBox32.TabStop = false;
+            // 
             // clockIn5
             // 
             this.clockIn5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1093,9 +1280,9 @@ namespace NetrayaDashboard
             this.clock5.ForeColor = System.Drawing.Color.DimGray;
             this.clock5.Location = new System.Drawing.Point(88, 22);
             this.clock5.Name = "clock5";
-            this.clock5.Size = new System.Drawing.Size(58, 16);
+            this.clock5.Size = new System.Drawing.Size(69, 16);
             this.clock5.TabIndex = 9;
-            this.clock5.Text = "Clock In";
+            this.clock5.Text = "Clock Out";
             // 
             // materialCard4
             // 
@@ -1116,6 +1303,18 @@ namespace NetrayaDashboard
             this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard4.Size = new System.Drawing.Size(454, 241);
             this.materialCard4.TabIndex = 3;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox4.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(120, 136);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
             // 
             // namePanel4
             // 
@@ -1175,6 +1374,16 @@ namespace NetrayaDashboard
             this.header4.Size = new System.Drawing.Size(426, 54);
             this.header4.TabIndex = 8;
             // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox31.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox31.TabIndex = 11;
+            this.pictureBox31.TabStop = false;
+            // 
             // clockIn4
             // 
             this.clockIn4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1195,220 +1404,11 @@ namespace NetrayaDashboard
             this.clock4.ForeColor = System.Drawing.Color.DimGray;
             this.clock4.Location = new System.Drawing.Point(88, 22);
             this.clock4.Name = "clock4";
-            this.clock4.Size = new System.Drawing.Size(58, 16);
+            this.clock4.Size = new System.Drawing.Size(69, 16);
             this.clock4.TabIndex = 9;
-            this.clock4.Text = "Clock In";
+            this.clock4.Text = "Clock Out";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox3.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox30.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox30.TabIndex = 11;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox29.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox29.TabIndex = 8;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox28.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox28.TabIndex = 5;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox9.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox9.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox36.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox36.TabIndex = 14;
-            this.pictureBox36.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox8.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox35.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox35.TabIndex = 11;
-            this.pictureBox35.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox7.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox7.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox34.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox34.TabIndex = 11;
-            this.pictureBox34.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox6.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox6.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox33.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox33.TabIndex = 11;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox5.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox32.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox32.TabIndex = 11;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox4.Image = global::NetrayaDashboard.Properties.Resources._default;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(120, 136);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::NetrayaDashboard.Properties.Resources.time_1;
-            this.pictureBox31.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox31.TabIndex = 11;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBoxHeader
-            // 
-            this.pictureBoxHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxHeader.Image = global::NetrayaDashboard.Properties.Resources.Navbar_Attendance;
-            this.pictureBoxHeader.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxHeader.Name = "pictureBoxHeader";
-            this.pictureBoxHeader.Size = new System.Drawing.Size(1440, 100);
-            this.pictureBoxHeader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHeader.TabIndex = 0;
-            this.pictureBoxHeader.TabStop = false;
-            // 
-            // DashboardNine
+            // DashboardNineOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1421,69 +1421,69 @@ namespace NetrayaDashboard
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DashboardNine";
+            this.Name = "DashboardNineOut";
             this.Text = "Netraya Attendance";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).EndInit();
             this.contextMenuStrip.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.materialCard3.ResumeLayout(false);
             this.materialCard3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.header3.ResumeLayout(false);
             this.header3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.materialCard2.ResumeLayout(false);
             this.materialCard2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.header2.ResumeLayout(false);
             this.header2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.header1.ResumeLayout(false);
             this.header1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             this.materialCard9.ResumeLayout(false);
             this.materialCard9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.header9.ResumeLayout(false);
             this.header9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             this.materialCard8.ResumeLayout(false);
             this.materialCard8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.header8.ResumeLayout(false);
             this.header8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             this.materialCard7.ResumeLayout(false);
             this.materialCard7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.header7.ResumeLayout(false);
             this.header7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             this.materialCard6.ResumeLayout(false);
             this.materialCard6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.header6.ResumeLayout(false);
             this.header6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             this.materialCard5.ResumeLayout(false);
             this.materialCard5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.header5.ResumeLayout(false);
             this.header5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.materialCard4.ResumeLayout(false);
             this.materialCard4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.header4.ResumeLayout(false);
             this.header4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).EndInit();
             this.ResumeLayout(false);
 
         }

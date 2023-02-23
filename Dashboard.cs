@@ -80,6 +80,10 @@ namespace NetrayaDashboard
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            // display date
+            currentDate.Text = DateTime.Now.ToString("dddd, dd-MM-yyyy");
+            currentTime.Text = DateTime.Now.ToString("HH:mm");
+
             // display top 16 data in tbl_log
             //absent();
             lateList();
@@ -162,8 +166,12 @@ namespace NetrayaDashboard
                                 // jika rfid tsb ada di data employee update data array
                                 if (dt1.Rows.Count > 0)
                                 {
-                                    employee[rfidno].timelog = timelogs;
-                                    employee[rfidno].sequence = sequences;
+                                    // update jika hanya sequence awalnya 0
+                                    if (employee[rfidno].sequence == 0)
+                                    {
+                                        employee[rfidno].timelog = timelogs;
+                                        employee[rfidno].sequence = sequences;
+                                    }                                    
                                 }
                             }
                         }
@@ -211,7 +219,7 @@ namespace NetrayaDashboard
             catch (Exception ex)
             {
                 myConn.Close();
-                MessageBox.Show("displayData: " + ex.Message);
+                //MessageBox.Show("displayData: " + ex.Message);
             }
         }
 

@@ -57,7 +57,7 @@ namespace NetrayaDashboard
             }
             else if (cmbRoom.Text == "SMT-OUT")
             {
-                FormMainNineOut form = new FormMainNineOut();
+                DashboardNineOut form = new DashboardNineOut();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
                 form.Text += " (" + cmbRoom.Text + ")";
@@ -65,7 +65,7 @@ namespace NetrayaDashboard
             }
             else if (cmbRoom.Text == "SMT-MAINOUT")
             {
-                FormMainNineOut form = new FormMainNineOut();
+                DashboardNineOut form = new DashboardNineOut();
                 this.Hide();
                 form.roomtb.Text = cmbRoom.Text;
                 form.Text += " (" + cmbRoom.Text + ")";

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace NetrayaDashboard
 {
-    public partial class DashboardNine : Form
+    public partial class DashboardNineOut : Form
     {
         MySqlConnection myConn;
         readonly Helper help = new Helper();
@@ -22,7 +22,7 @@ namespace NetrayaDashboard
 
         string queryAbsent;
 
-        public DashboardNine()
+        public DashboardNineOut()
         {
             InitializeComponent();
         }
@@ -62,6 +62,7 @@ namespace NetrayaDashboard
         {
             currentDate.Text = DateTime.Now.ToString("dddd, dd-MM-yyyy");
             currentTime.Text = DateTime.Now.ToString("HH:mm");
+
             queryAbsent = null;
             // display top 9 data in tbl_log
             EmployeeData();
@@ -90,13 +91,13 @@ namespace NetrayaDashboard
                 stopwatch.Start();
 
                 // get view selected
-                if (roomtb.Text == "SMT-SA")
+                if (roomtb.Text == "SMT-OUT")
                 {
-                    queryAbsent = "SELECT * FROM clockIn_SA";
+                    queryAbsent = "SELECT * FROM clockOut";
                 }
-                else if (roomtb.Text == "SMT-DIPPING")
+                else if (roomtb.Text == "SMT-MAINOUT")
                 {
-                    queryAbsent ="SELECT * FROM clockIn_Dipping";
+                    queryAbsent = "SELECT * FROM clockOut_MainRoom";
                 }
 
                 // arrayemployeeata

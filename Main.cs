@@ -2,80 +2,46 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     public partial class Main : MaterialForm
     {
+        Helper help = new Helper();
+        ConnectionDB connectionDB = new ConnectionDB();
+
         public Main()
         {
             InitializeComponent();
-        }
 
-        private void Main_Load(object sender, EventArgs e)
-        {
-            cmbRoom.SelectedIndex = -1;
-        }
-
-        private void cmbSize_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbRoom.Text == "SMT-MAINROOM")
-            {
-                //FormMains formMains = new FormMains();
-                //formMains.Text += " ("+cmbRoom.Text+ ")";
-                //this.Hide();
-                //formMains.Show();
-
-                Dashboard dashboard = new Dashboard();
-                dashboard.Text += " (" + cmbRoom.Text + ")";
-                this.Hide();
-                dashboard.Show();
-            }
-            else if (cmbRoom.Text == "SMT-SA")
-            {
-                //FormMainNine form = new FormMainNine();
-                //this.Hide();
-                //form.roomtb.Text = cmbRoom.Text;
-                //form.Text += " (" + cmbRoom.Text + ")";
-                //form.Show();
-
-                DashboardNine form = new DashboardNine();
-                this.Hide();
-                form.roomtb.Text = cmbRoom.Text;
-                form.Text += " (" + cmbRoom.Text + ")";
-                form.Show();
-            }
-            else if (cmbRoom.Text == "SMT-DIPPING")
-            {
-                DashboardNine form = new DashboardNine();
-                this.Hide();
-                form.roomtb.Text = cmbRoom.Text;
-                form.Text += " (" + cmbRoom.Text + ")";
-                form.Show();
-            }
-            else if (cmbRoom.Text == "SMT-OUT")
-            {
-                DashboardNineOut form = new DashboardNineOut();
-                this.Hide();
-                form.roomtb.Text = cmbRoom.Text;
-                form.Text += " (" + cmbRoom.Text + ")";
-                form.Show();
-            }
-            else if (cmbRoom.Text == "SMT-MAINOUT")
-            {
-                DashboardNineOut form = new DashboardNineOut();
-                this.Hide();
-                form.roomtb.Text = cmbRoom.Text;
-                form.Text += " (" + cmbRoom.Text + ")";
-                form.Show();
-            }
+            //menampilkan data combobox 
+            help.displayCmbList("SELECT * FROM tbl_masterroom ORDER BY id ", "name", "query", cmbRoom);
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.ExitThread();
+        }
+
+
+        private void selectBtn_Click(object sender, EventArgs e)
+        {
+            if (cmbRoom.Text != "System.Data.DataRowView" || cmbRoom.Text != "")
+            {
+                DashboardNine form = new DashboardNine();
+                this.Hide();
+                form.roomtb.Text = cmbRoom.SelectedValue.ToString();
+                form.Text += " (" + cmbRoom.SelectedValue.ToString() + ")";
+                form.Show();
+            }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

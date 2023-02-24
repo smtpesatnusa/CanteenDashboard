@@ -1,4 +1,4 @@
-﻿namespace NetrayaDashboard
+﻿namespace CanteenDashboard
 {
     partial class Main
     {
@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.cmbRoom = new MaterialSkin.Controls.MaterialComboBox();
+            this.selectBtn = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // cmbRoom
             // 
-            this.cmbRoom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbRoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbRoom.AutoResize = false;
             this.cmbRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -44,47 +44,60 @@
             this.cmbRoom.DropDownHeight = 174;
             this.cmbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRoom.DropDownWidth = 121;
-            this.cmbRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbRoom.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cmbRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cmbRoom.FormattingEnabled = true;
             this.cmbRoom.Hint = "Select Room";
             this.cmbRoom.IntegralHeight = false;
             this.cmbRoom.ItemHeight = 43;
-            this.cmbRoom.Items.AddRange(new object[] {
-            "SMT-MAINROOM",
-            "SMT-SA",
-            "SMT-DIPPING",
-            "SMT-MAINOUT",
-            "SMT-OUT"});
-            this.cmbRoom.Location = new System.Drawing.Point(94, 124);
-            this.cmbRoom.MaxDropDownItems = 10;
+            this.cmbRoom.Location = new System.Drawing.Point(21, 124);
+            this.cmbRoom.MaxDropDownItems = 4;
             this.cmbRoom.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbRoom.Name = "cmbRoom";
-            this.cmbRoom.Size = new System.Drawing.Size(303, 49);
+            this.cmbRoom.Size = new System.Drawing.Size(289, 49);
             this.cmbRoom.StartIndex = 0;
             this.cmbRoom.TabIndex = 0;
-            this.cmbRoom.SelectedIndexChanged += new System.EventHandler(this.cmbSize_SelectedIndexChanged);
+            // 
+            // selectBtn
+            // 
+            this.selectBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.selectBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.selectBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.selectBtn.Depth = 0;
+            this.selectBtn.HighEmphasis = true;
+            this.selectBtn.Icon = null;
+            this.selectBtn.Location = new System.Drawing.Point(328, 130);
+            this.selectBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.selectBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.selectBtn.Name = "selectBtn";
+            this.selectBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.selectBtn.Size = new System.Drawing.Size(74, 36);
+            this.selectBtn.TabIndex = 1;
+            this.selectBtn.Text = "Select";
+            this.selectBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.selectBtn.UseAccentColor = false;
+            this.selectBtn.UseVisualStyleBackColor = true;
+            this.selectBtn.Click += new System.EventHandler(this.selectBtn_Click);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 267);
+            this.ClientSize = new System.Drawing.Size(422, 232);
+            this.Controls.Add(this.selectBtn);
             this.Controls.Add(this.cmbRoom);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Netraya Attendance";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
+            this.Text = "Netraya Canteen";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
         private MaterialSkin.Controls.MaterialComboBox cmbRoom;
+        private MaterialSkin.Controls.MaterialButton selectBtn;
     }
 }
 

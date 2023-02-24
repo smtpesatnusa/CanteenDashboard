@@ -8,7 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     public partial class DashboardNineOut : Form
     {
@@ -152,8 +152,12 @@ namespace NetrayaDashboard
                                 // jika rfid tsb ada di data employee update data array
                                 if (dt1.Rows.Count > 0)
                                 {
-                                    employee[rfidno].timelog = timelogs;
-                                    employee[rfidno].sequence = sequences;
+                                    // update jika hanya sequence awalnya 0
+                                    if (employee[rfidno].sequence == 0)
+                                    {
+                                        employee[rfidno].timelog = timelogs;
+                                        employee[rfidno].sequence = sequences;
+                                    }
                                 }
                             }
                         }

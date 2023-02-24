@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     public class QueryLibrary
     {

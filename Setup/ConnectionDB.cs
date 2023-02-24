@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     public class ConnectionDB
     {
@@ -14,7 +14,7 @@ namespace NetrayaDashboard
         //static string password = "MyP4ssw@rd";
 
         static string host = "192.168.192.150";
-        static string database = "smt_attendance";
+        static string database = "netraya_canteen";
         static string userDB = "smt_developer";
         static string password = "w(v97weP8UGe=bYd";
         public static string strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password + ";SslMode=None;Connection Timeout=30";

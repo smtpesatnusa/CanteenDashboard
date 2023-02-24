@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3CBF9ADA-417F-4F81-89ED-DED7D13E322D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>NetrayaDashboard</RootNamespace>
-    <AssemblyName>Netraya Dashboard</AssemblyName>
+    <RootNamespace>CanteenDashboard</RootNamespace>
+    <AssemblyName>Canteen Dashboard</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -25,7 +25,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.192.254\SystemSupport\Netraya\Netraya Dashboard\</UpdateUrl>
-    <ApplicationRevision>65</ApplicationRevision>
+    <ApplicationRevision>74</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -143,41 +143,11 @@
     <Compile Include="DashboardNine.Designer.cs">
       <DependentUpon>DashboardNine.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMainNineOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMainNineOut.Designer.cs">
-      <DependentUpon>FormMainNineOut.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMainNine.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMainNine.Designer.cs">
-      <DependentUpon>FormMainNine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMains.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMains.Designer.cs">
-      <DependentUpon>FormMains.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -191,23 +161,8 @@
     <EmbeddedResource Include="DashboardNine.resx">
       <DependentUpon>DashboardNine.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMainNineOut.resx">
-      <DependentUpon>FormMainNineOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMainNine.resx">
-      <DependentUpon>FormMainNine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMains.resx">
-      <DependentUpon>FormMains.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -219,7 +174,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="NetrayaDashboard_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

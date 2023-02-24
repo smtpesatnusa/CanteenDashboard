@@ -8,7 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     public partial class DashboardNine : Form
     {
@@ -89,15 +89,8 @@ namespace NetrayaDashboard
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                // get view selected
-                if (roomtb.Text == "SMT-SA")
-                {
-                    queryAbsent = "SELECT * FROM clockIn_SA";
-                }
-                else if (roomtb.Text == "SMT-DIPPING")
-                {
-                    queryAbsent ="SELECT * FROM clockIn_Dipping";
-                }
+                string view = roomtb.Text;                
+                queryAbsent = "SELECT * FROM "+view;
 
                 // arrayemployeeata
                 var employee = new Dictionary<string, EmployeeDetail>();
@@ -151,8 +144,12 @@ namespace NetrayaDashboard
                                 // jika rfid tsb ada di data employee update data array
                                 if (dt1.Rows.Count > 0)
                                 {
-                                    employee[rfidno].timelog = timelogs;
-                                    employee[rfidno].sequence = sequences;
+                                    // update jika hanya sequence awalnya 0
+                                    if (employee[rfidno].sequence == 0)
+                                    {
+                                        employee[rfidno].timelog = timelogs;
+                                        employee[rfidno].sequence = sequences;
+                                    }
                                 }
                             }
                         }
@@ -413,7 +410,7 @@ namespace NetrayaDashboard
                 string koneksi = ConnectionDB.strProvider;
                 myConn = new MySqlConnection(koneksi);
 
-                string query = "SELECT a.islate FROM tbl_attendance a , tbl_employee b WHERE a.emplid = b.id AND " +
+                string query = "SELECT a.isOver FROM tbl_attendance a , tbl_employee b WHERE a.emplid = b.id AND " +
                     "DATE = '" + DateTime.Now.ToString("yyyy-MM-dd") + "' AND b.badgeId='" + badgeEmployee + "'";
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(query, myConn))
                 {
@@ -424,7 +421,7 @@ namespace NetrayaDashboard
                     {
                         for (int i = 0; i < dt.Rows.Count; i++)
                         {
-                            isLate = dt.Rows[i]["islate"].ToString();
+                            isLate = dt.Rows[i]["isOver"].ToString();
                         }
                     }
                 }

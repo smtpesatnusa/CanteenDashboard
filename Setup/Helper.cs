@@ -12,7 +12,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     public class Helper
     {
@@ -372,6 +372,7 @@ namespace NetrayaDashboard
         {
             try
             {
+
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(sql, connectionDB.connection))
                 {
                     DataTable dt = new DataTable();
@@ -597,6 +598,29 @@ namespace NetrayaDashboard
 
                 return dstImage;
             }
+        }
+
+
+        // class for make smooth corner picture box
+        public Region smoothImage(PictureBox pictureBox)
+        {
+            Rectangle r = new Rectangle(0, 0, pictureBox.Width, pictureBox.Height);
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            int d = 50;
+            gp.AddArc(r.X, r.Y, d, d, 180, 90);
+            gp.AddArc(r.X + r.Width - d, r.Y, d, d, 270, 90);
+            gp.AddArc(r.X + r.Width - d, r.Y + r.Height - d, d, d, 0, 90);
+            gp.AddArc(r.X, r.Y + r.Height - d, d, d, 90, 90);
+            return pictureBox.Region = new Region(gp);
+        }
+
+
+        // class for make circle picture box
+        public Region circleImage(PictureBox pictureBox)
+        {
+            System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.AddEllipse(0, 0, pictureBox.Width, pictureBox.Height);
+            return pictureBox.Region = new Region(path);
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     static class Program
     {
@@ -21,7 +21,7 @@ namespace NetrayaDashboard
         {
             // to let user open app in 1 instance
             bool createdNew = true;
-            using (Mutex mutex = new Mutex(true, "NetrayaDashboard", out createdNew))
+            using (Mutex mutex = new Mutex(true, "CanteenDashboard", out createdNew))
             {
                 if (createdNew)
                 {

@@ -1,5 +1,5 @@
 ﻿
-namespace NetrayaDashboard
+namespace CanteenDashboard
 {
     partial class DashboardNineOut
     {
@@ -230,7 +230,7 @@ namespace NetrayaDashboard
             // pictureBoxHeader
             // 
             this.pictureBoxHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxHeader.Image = global::NetrayaDashboard.Properties.Resources.Navbar_Attendance;
+            this.pictureBoxHeader.Image = global::CanteenDashboard.Properties.Resources.Navbar_Attendance;
             this.pictureBoxHeader.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxHeader.Name = "pictureBoxHeader";
             this.pictureBoxHeader.Size = new System.Drawing.Size(1440, 100);
@@ -316,7 +316,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox3.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox3.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox3.Location = new System.Drawing.Point(17, 100);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(120, 136);
@@ -384,7 +384,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox30
             // 
-            this.pictureBox30.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox30.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox30.Location = new System.Drawing.Point(30, 10);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(35, 35);
@@ -440,7 +440,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox2.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox2.Location = new System.Drawing.Point(17, 100);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(120, 136);
@@ -508,7 +508,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox29
             // 
-            this.pictureBox29.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox29.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox29.Location = new System.Drawing.Point(30, 10);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(35, 35);
@@ -564,7 +564,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox1.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox1.Location = new System.Drawing.Point(17, 102);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 136);
@@ -632,7 +632,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox28
             // 
-            this.pictureBox28.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox28.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox28.Location = new System.Drawing.Point(30, 10);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(35, 35);
@@ -688,7 +688,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox9.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox9.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox9.Location = new System.Drawing.Point(17, 100);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(120, 136);
@@ -756,7 +756,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox36
             // 
-            this.pictureBox36.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox36.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox36.Location = new System.Drawing.Point(30, 10);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(35, 35);
@@ -812,7 +812,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox8.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox8.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox8.Location = new System.Drawing.Point(17, 100);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(120, 136);
@@ -880,7 +880,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox35
             // 
-            this.pictureBox35.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox35.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox35.Location = new System.Drawing.Point(30, 10);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(35, 35);
@@ -936,7 +936,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox7.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox7.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox7.Location = new System.Drawing.Point(17, 100);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(120, 136);
@@ -1004,7 +1004,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox34
             // 
-            this.pictureBox34.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox34.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox34.Location = new System.Drawing.Point(30, 10);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(35, 35);
@@ -1060,7 +1060,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox6.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox6.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox6.Location = new System.Drawing.Point(17, 100);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(120, 136);
@@ -1128,7 +1128,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox33
             // 
-            this.pictureBox33.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox33.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox33.Location = new System.Drawing.Point(30, 10);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(35, 35);
@@ -1184,7 +1184,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox5.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox5.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox5.Location = new System.Drawing.Point(17, 100);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(120, 136);
@@ -1252,7 +1252,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox32
             // 
-            this.pictureBox32.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox32.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox32.Location = new System.Drawing.Point(30, 10);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(35, 35);
@@ -1308,7 +1308,7 @@ namespace NetrayaDashboard
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox4.Image = global::NetrayaDashboard.Properties.Resources._default;
+            this.pictureBox4.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox4.Location = new System.Drawing.Point(17, 100);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(120, 136);
@@ -1376,7 +1376,7 @@ namespace NetrayaDashboard
             // 
             // pictureBox31
             // 
-            this.pictureBox31.Image = global::NetrayaDashboard.Properties.Resources.time_1;
+            this.pictureBox31.Image = global::CanteenDashboard.Properties.Resources.time_1;
             this.pictureBox31.Location = new System.Drawing.Point(30, 10);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(35, 35);

@@ -8,15 +8,15 @@ namespace CanteenDashboard
     public class ConnectionDB
     {
         MySqlConnection conn;
-        //static string host = "localhost";
-        //static string database = "smt_attendance";
-        //static string userDB = "root";
-        //static string password = "MyP4ssw@rd";
-
-        static string host = "192.168.192.150";
+        static string host = "192.168.20.253";
         static string database = "netraya_canteen";
-        static string userDB = "smt_developer";
-        static string password = "w(v97weP8UGe=bYd";
+        static string userDB = "dot_developer";
+        static string password = "dot";
+
+        //static string host = "192.168.192.150";
+        //static string database = "netraya_canteen";
+        //static string userDB = "smt_developer";
+        //static string password = "w(v97weP8UGe=bYd";
         public static string strProvider = "server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password + ";SslMode=None;Connection Timeout=30";
         public MySqlConnection connection = new MySqlConnection("server=" + host + ";Database=" + database + ";User ID=" + userDB + ";Password=" + password + ";SslMode=None;Connection Timeout=30");
 

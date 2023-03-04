@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>Y:\Netraya\Netraya Dashboard\</PublishUrl>
+    <PublishUrl>Y:\Netraya\CanteenDashboard\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -24,8 +24,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <UpdateUrl>\\192.168.192.254\SystemSupport\Netraya\Netraya Dashboard\</UpdateUrl>
-    <ApplicationRevision>74</ApplicationRevision>
+    <UpdateUrl>\\192.168.192.254\Netraya\CanteenDashboard\</UpdateUrl>
+    <ApplicationRevision>89</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -131,12 +131,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DashboardNineOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DashboardNineOut.Designer.cs">
-      <DependentUpon>DashboardNineOut.cs</DependentUpon>
-    </Compile>
+    <Compile Include="EmployeeDetail.cs" />
+    <Compile Include="GlobalVariables.cs" />
     <Compile Include="DashboardNine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,13 +147,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Setup\ConnectionDB.cs" />
     <Compile Include="Setup\Helper.cs" />
     <Compile Include="Setup\MessagesHelper.cs" />
     <Compile Include="Setup\QueryLibrary.cs" />
-    <EmbeddedResource Include="DashboardNineOut.resx">
-      <DependentUpon>DashboardNineOut.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DashboardNine.resx">
       <DependentUpon>DashboardNine.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,14 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -190,15 +183,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\Navbar-Canteen-Breaktime-Tracking.png" />
     <None Include="Resources\Navbar_Attendance.png" />
     <None Include="Resources\square-list.png" />
-    <None Include="Resources\crown.png" />
     <None Include="Resources\time 2.png" />
     <None Include="Resources\time 1.png" />
     <None Include="Resources\default.png" />
     <None Include="Resources\Navbar.png" />
     <None Include="Resources\icons8-reply-arrow-30.png" />
-    <None Include="Resources\overdue.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\employee\" />

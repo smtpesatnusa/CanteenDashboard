@@ -73,16 +73,6 @@ namespace CanteenDashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap crown {
-            get {
-                object obj = ResourceManager.GetObject("crown", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_reply_arrow_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-reply-arrow-30", resourceCulture);
@@ -113,9 +103,9 @@ namespace CanteenDashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap overdue {
+        internal static System.Drawing.Bitmap Navbar_Canteen_Breaktime_Tracking {
             get {
-                object obj = ResourceManager.GetObject("overdue", resourceCulture);
+                object obj = ResourceManager.GetObject("Navbar-Canteen-Breaktime-Tracking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

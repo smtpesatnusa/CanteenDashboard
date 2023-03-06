@@ -132,10 +132,10 @@ namespace CanteenDashboard
                     }
                 }
 
-                foreach (var kvp in employee)
-                {
-                    Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value.name);
-                }
+                //foreach (var kvp in employee)
+                //{
+                //    Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value.name);
+                //}
 
                 GlobalVariables.employee = employee;
 
@@ -162,6 +162,13 @@ namespace CanteenDashboard
 
                 string view = roomtb.Text;
                 queryAbsent = "SELECT * FROM " + view;
+
+                // reset sequence to 0
+                foreach (var employeeItem in GlobalVariables.employee)
+                {
+                    GlobalVariables.employee[employeeItem.Key].sequence = 0;
+                    //Console.WriteLine("Key = {0}, Value = {1}", employeeItem.Key, employeeItem.Value.name);
+                }
 
                 // select rfid log
                 using (MySqlDataAdapter adpt = new MySqlDataAdapter(queryAbsent, myConn))
@@ -229,6 +236,7 @@ namespace CanteenDashboard
 
                 stopwatch.Stop();
                 Debug.WriteLine(" inserts took " + stopwatch.ElapsedMilliseconds + " ms");
+                myConn.Close();
             }
             catch (Exception ex)
             {

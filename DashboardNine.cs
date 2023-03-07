@@ -21,6 +21,7 @@ namespace CanteenDashboard
         string time1, time2, time3, time4, time5, time6, time7, time8, time9;
 
         string queryAbsent;
+        string imageLocation;
 
         public DashboardNine()
         {
@@ -88,6 +89,41 @@ namespace CanteenDashboard
         //    public string timelog { get; set; }
         //    public int sequence { get; set; }
         //}
+
+        public void getImageLocation()
+        {
+            try
+            {
+                string koneksi = ConnectionDB.strProvider;
+                myConn = new MySqlConnection(koneksi);
+                myConn.Open();
+
+                var stopwatch = new Stopwatch();
+                stopwatch.Start();
+               
+                // imagelocation
+                var employee = new Dictionary<string, EmployeeDetail>();
+                string query = "SELECT filedirectory FROM tbl_imagelocation";
+
+                using (MySqlDataAdapter adpt = new MySqlDataAdapter(query, myConn))
+                {
+                    DataTable dt = new DataTable();
+                    adpt.Fill(dt);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        imageLocation = dt.Rows[0]["filedirectory"].ToString();
+                    }
+                }
+                stopwatch.Stop();
+                //Debug.WriteLine(" inserts took " + stopwatch.ElapsedMilliseconds + " ms");
+            }
+            catch (Exception ex)
+            {
+                myConn.Close();
+                //MessageBox.Show("displayData: " + ex.Message);
+            }
+        }
 
         public void EmployeeData()
         {
@@ -184,24 +220,36 @@ namespace CanteenDashboard
                             string rfidno = dt.Rows[i]["rfidNo"].ToString();
                             string timelogs = DateTime.Parse(dt.Rows[i]["timelog"].ToString()).ToString("yyyy-MM-dd HH:mm:ss");
 
-                            // check rfid tsb di data employee
-                            string query = "SELECT rfidNo FROM tbl_employee WHERE rfidNo = '" + rfidno + "'";
-                            using (MySqlDataAdapter adpt1 = new MySqlDataAdapter(query, myConn))
-                            {
-                                DataTable dt1 = new DataTable();
-                                adpt1.Fill(dt1);
+                            Debug.WriteLine(rfidno);
 
-                                // jika rfid tsb ada di data employee update data array
-                                if (dt1.Rows.Count > 0)
+                            if (GlobalVariables.employee.ContainsKey(rfidno))
+                            {
+                                // update jika hanya sequence awalnya 0
+                                if (GlobalVariables.employee[rfidno].sequence == 0)
                                 {
-                                    // update jika hanya sequence awalnya 0
-                                    if (GlobalVariables.employee[rfidno].sequence == 0)
-                                    {
-                                        GlobalVariables.employee[rfidno].timelog = timelogs;
-                                        GlobalVariables.employee[rfidno].sequence = sequences;
-                                    }
+                                    GlobalVariables.employee[rfidno].timelog = timelogs;
+                                    GlobalVariables.employee[rfidno].sequence = sequences;
                                 }
                             }
+                            
+                            //// check rfid tsb di data employee
+                            //string query = "SELECT rfidNo FROM tbl_employee WHERE rfidNo = '" + rfidno + "'";
+                            //using (MySqlDataAdapter adpt1 = new MySqlDataAdapter(query, myConn))
+                            //{
+                            //    DataTable dt1 = new DataTable();
+                            //    adpt1.Fill(dt1);
+
+                            //    // jika rfid tsb ada di data employee update data array
+                            //    if (dt1.Rows.Count > 0)
+                            //    {
+                            //        // update jika hanya sequence awalnya 0
+                            //        if (GlobalVariables.employee[rfidno].sequence == 0)
+                            //        {
+                            //            GlobalVariables.employee[rfidno].timelog = timelogs;
+                            //            GlobalVariables.employee[rfidno].sequence = sequences;
+                            //        }
+                            //    }
+                            //}
                         }
                     }
                 }
@@ -241,6 +289,7 @@ namespace CanteenDashboard
             catch (Exception ex)
             {
                 myConn.Close();
+                Debug.WriteLine(ex.Message);
                 //MessageBox.Show("displayData: " + ex.Message);
             }
         }
@@ -261,9 +310,10 @@ namespace CanteenDashboard
                     badgeId1.Text = badge1;
                     linesection1.Text = lineCode1 + " (" + section1 + ")";
                     clockIn1.Text = time1;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge1 + ".jpg"))
+                    //if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge1 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge1 + ".jpg"))
                     {
-                        pictureBox1.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge1 + ".jpg");
+                        pictureBox1.Image = Image.FromFile(@"C:\EmplFoto\" + badge1 + ".jpg");
                     }
                     else
                     {
@@ -282,9 +332,9 @@ namespace CanteenDashboard
                     badgeId2.Text = badge2;
                     linesection2.Text = lineCode2 + " (" + section2 + ")";
                     clockIn2.Text = time2;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge2 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge2 + ".jpg"))
                     {
-                        pictureBox2.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge2 + ".jpg");
+                        pictureBox2.Image = Image.FromFile(@"C:\EmplFoto\" + badge2 + ".jpg");
                     }
                     else
                     {
@@ -303,9 +353,9 @@ namespace CanteenDashboard
                     badgeId3.Text = badge3;
                     linesection3.Text = lineCode3 + " (" + section3 + ")";
                     clockIn3.Text = time3;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge3 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge3 + ".jpg"))
                     {
-                        pictureBox3.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge3 + ".jpg");
+                        pictureBox3.Image = Image.FromFile(@"C:\EmplFoto\" + badge3 + ".jpg");
                     }
                     else
                     {
@@ -324,9 +374,9 @@ namespace CanteenDashboard
                     badgeId4.Text = badge4;
                     linesection4.Text = lineCode4 + " (" + section4 + ")";
                     clockIn4.Text = time4;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge4 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge4 + ".jpg"))
                     {
-                        pictureBox4.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge4 + ".jpg");
+                        pictureBox4.Image = Image.FromFile(@"C:\EmplFoto\" + badge4 + ".jpg");
                     }
                     else
                     {
@@ -345,9 +395,9 @@ namespace CanteenDashboard
                     badgeId5.Text = badge5;
                     linesection5.Text = lineCode5 + " (" + section5 + ")";
                     clockIn5.Text = time5;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge5 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge5 + ".jpg"))
                     {
-                        pictureBox5.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge5 + ".jpg");
+                        pictureBox5.Image = Image.FromFile(@"C:\EmplFoto\" + badge5 + ".jpg");
                     }
                     else
                     {
@@ -366,9 +416,9 @@ namespace CanteenDashboard
                     badgeId6.Text = badge6;
                     linesection6.Text = lineCode6 + " (" + section6 + ")";
                     clockIn6.Text = time6;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge6 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge6 + ".jpg"))
                     {
-                        pictureBox6.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge6 + ".jpg");
+                        pictureBox6.Image = Image.FromFile(@"C:\EmplFoto\" + badge6 + ".jpg");
                     }
                     else
                     {
@@ -387,9 +437,9 @@ namespace CanteenDashboard
                     badgeId7.Text = badge7;
                     linesection7.Text = lineCode7 + " (" + section7 + ")";
                     clockIn7.Text = time7;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge7 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge7 + ".jpg"))
                     {
-                        pictureBox7.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge7 + ".jpg");
+                        pictureBox7.Image = Image.FromFile(@"C:\EmplFoto\" + badge7 + ".jpg");
                     }
                     else
                     {
@@ -408,9 +458,9 @@ namespace CanteenDashboard
                     badgeId8.Text = badge8;
                     linesection8.Text = lineCode8 + " (" + section8 + ")";
                     clockIn8.Text = time8;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge8 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge8 + ".jpg"))
                     {
-                        pictureBox8.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge8 + ".jpg");
+                        pictureBox8.Image = Image.FromFile(@"C:\EmplFoto\" + badge8 + ".jpg");
                     }
                     else
                     {
@@ -429,9 +479,9 @@ namespace CanteenDashboard
                     badgeId9.Text = badge9;
                     linesection9.Text = lineCode9 + " (" + section9 + ")";
                     clockIn9.Text = time9;
-                    if (File.Exists(@"\\192.168.20.253\Netraya\EmplFoto\" + badge9 + ".jpg"))
+                    if (File.Exists(@"C:\EmplFoto\" + badge9 + ".jpg"))
                     {
-                        pictureBox9.Image = Image.FromFile(@"\\192.168.20.253\Netraya\EmplFoto\" + badge9 + ".jpg");
+                        pictureBox9.Image = Image.FromFile(@"C:\EmplFoto\" + badge9 + ".jpg");
                     }
                     else
                     {

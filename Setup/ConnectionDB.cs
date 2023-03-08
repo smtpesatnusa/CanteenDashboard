@@ -8,10 +8,15 @@ namespace CanteenDashboard
     public class ConnectionDB
     {
         MySqlConnection conn;
-        static string host = "192.168.20.253";
+        static string host = "192.168.88.30";
         static string database = "netraya_canteen";
-        static string userDB = "dot_developer";
-        static string password = "dot";
+        static string userDB = "rfid_developer";
+        static string password = "w(v97weP8UGe=bYd";
+
+        //static string host = "192.168.88.253";
+        //static string database = "netraya_canteen";
+        //static string userDB = "dot_developer";
+        //static string password = "dot";
 
         //static string host = "192.168.192.150";
         //static string database = "netraya_canteen";

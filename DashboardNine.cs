@@ -30,7 +30,7 @@ namespace CanteenDashboard
 
         private void timer_Tick(object sender, System.EventArgs e)
         {
-            currentDate.Text = DateTime.Now.ToString("dddd, dd-MM-yyyy");
+            currentDate.Text = DateTime.Now.ToString("ddd, dd-MM-yyyy");
             currentTime.Text = DateTime.Now.ToString("HH:mm");
             if (DateTime.Now.ToString("HH:mm") == "23:59")
             {
@@ -67,7 +67,7 @@ namespace CanteenDashboard
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            currentDate.Text = DateTime.Now.ToString("dddd, dd-MM-yyyy");
+            currentDate.Text = DateTime.Now.ToString("ddd, dd-MM-yyyy");
             currentTime.Text = DateTime.Now.ToString("HH:mm");
             queryAbsent = null;
 
@@ -468,6 +468,7 @@ namespace CanteenDashboard
                     }
                     HeaderColor(header8, clock8, badge8, "0");
                 }
+
                 if (r > 8)
                 {
                     employee9 = dt.Rows[8]["name"].ToString();

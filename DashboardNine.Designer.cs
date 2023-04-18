@@ -41,6 +41,16 @@ namespace CanteenDashboard
             this.mainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.namePanel7 = new System.Windows.Forms.Label();
+            this.badgeId7 = new System.Windows.Forms.Label();
+            this.linesection7 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.header7 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.clockIn7 = new System.Windows.Forms.Label();
+            this.clock7 = new System.Windows.Forms.Label();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.namePanel3 = new System.Windows.Forms.Label();
@@ -76,9 +86,9 @@ namespace CanteenDashboard
             this.namePanel9 = new System.Windows.Forms.Label();
             this.badgeId9 = new System.Windows.Forms.Label();
             this.linesection9 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.header9 = new System.Windows.Forms.Panel();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.clockIn9 = new System.Windows.Forms.Label();
             this.clock9 = new System.Windows.Forms.Label();
             this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
@@ -86,21 +96,11 @@ namespace CanteenDashboard
             this.namePanel8 = new System.Windows.Forms.Label();
             this.badgeId8 = new System.Windows.Forms.Label();
             this.linesection8 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.header8 = new System.Windows.Forms.Panel();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.clockIn8 = new System.Windows.Forms.Label();
             this.clock8 = new System.Windows.Forms.Label();
-            this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.namePanel7 = new System.Windows.Forms.Label();
-            this.badgeId7 = new System.Windows.Forms.Label();
-            this.linesection7 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.header7 = new System.Windows.Forms.Panel();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.clockIn7 = new System.Windows.Forms.Label();
-            this.clock7 = new System.Windows.Forms.Label();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.namePanel6 = new System.Windows.Forms.Label();
@@ -135,6 +135,10 @@ namespace CanteenDashboard
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.materialCard7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.header7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.materialCard3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.header3.SuspendLayout();
@@ -150,14 +154,10 @@ namespace CanteenDashboard
             this.materialCard9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.header9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             this.materialCard8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.header8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            this.materialCard7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.header7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             this.materialCard6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -182,7 +182,7 @@ namespace CanteenDashboard
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1440, 70);
+            this.panelHeader.Size = new System.Drawing.Size(1366, 70);
             this.panelHeader.TabIndex = 0;
             // 
             // roomtb
@@ -206,7 +206,7 @@ namespace CanteenDashboard
             this.currentTime.BackColor = System.Drawing.Color.White;
             this.currentTime.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(36)))), ((int)(((byte)(44)))));
-            this.currentTime.Location = new System.Drawing.Point(1291, 23);
+            this.currentTime.Location = new System.Drawing.Point(1228, 23);
             this.currentTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentTime.Name = "currentTime";
             this.currentTime.Size = new System.Drawing.Size(124, 23);
@@ -220,7 +220,7 @@ namespace CanteenDashboard
             this.currentDate.BackColor = System.Drawing.Color.White;
             this.currentDate.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(36)))), ((int)(((byte)(44)))));
-            this.currentDate.Location = new System.Drawing.Point(981, 23);
+            this.currentDate.Location = new System.Drawing.Point(993, 23);
             this.currentDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentDate.Name = "currentDate";
             this.currentDate.Size = new System.Drawing.Size(122, 23);
@@ -233,7 +233,7 @@ namespace CanteenDashboard
             this.pictureBoxHeader.Image = global::CanteenDashboard.Properties.Resources.Navbar_Canteen_Breaktime_Tracking;
             this.pictureBoxHeader.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxHeader.Name = "pictureBoxHeader";
-            this.pictureBoxHeader.Size = new System.Drawing.Size(1440, 70);
+            this.pictureBoxHeader.Size = new System.Drawing.Size(1366, 70);
             this.pictureBoxHeader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHeader.TabIndex = 0;
             this.pictureBoxHeader.TabStop = false;
@@ -274,12 +274,12 @@ namespace CanteenDashboard
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.materialCard7, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.materialCard3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.materialCard2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.materialCard1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.materialCard9, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.materialCard8, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.materialCard7, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.materialCard9, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.materialCard8, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.materialCard6, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.materialCard5, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.materialCard4, 0, 1);
@@ -289,8 +289,132 @@ namespace CanteenDashboard
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1394, 783);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1320, 673);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // materialCard7
+            // 
+            this.materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard7.Controls.Add(this.pictureBox7);
+            this.materialCard7.Controls.Add(this.namePanel7);
+            this.materialCard7.Controls.Add(this.badgeId7);
+            this.materialCard7.Controls.Add(this.linesection7);
+            this.materialCard7.Controls.Add(this.panel1);
+            this.materialCard7.Controls.Add(this.header7);
+            this.materialCard7.Depth = 0;
+            this.materialCard7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard7.Location = new System.Drawing.Point(5, 453);
+            this.materialCard7.Margin = new System.Windows.Forms.Padding(5);
+            this.materialCard7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard7.Name = "materialCard7";
+            this.materialCard7.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard7.Size = new System.Drawing.Size(430, 215);
+            this.materialCard7.TabIndex = 8;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox7.Image = global::CanteenDashboard.Properties.Resources._default;
+            this.pictureBox7.Location = new System.Drawing.Point(17, 100);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(120, 110);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 9;
+            this.pictureBox7.TabStop = false;
+            // 
+            // namePanel7
+            // 
+            this.namePanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.namePanel7.AutoSize = true;
+            this.namePanel7.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel7.ForeColor = System.Drawing.Color.DimGray;
+            this.namePanel7.Location = new System.Drawing.Point(140, 101);
+            this.namePanel7.Name = "namePanel7";
+            this.namePanel7.Size = new System.Drawing.Size(134, 98);
+            this.namePanel7.TabIndex = 13;
+            this.namePanel7.Text = "Sekar\r\nAni";
+            // 
+            // badgeId7
+            // 
+            this.badgeId7.AutoSize = true;
+            this.badgeId7.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.badgeId7.ForeColor = System.Drawing.Color.DimGray;
+            this.badgeId7.Location = new System.Drawing.Point(26, 72);
+            this.badgeId7.Name = "badgeId7";
+            this.badgeId7.Size = new System.Drawing.Size(69, 19);
+            this.badgeId7.TabIndex = 12;
+            this.badgeId7.Text = "039928";
+            // 
+            // linesection7
+            // 
+            this.linesection7.AutoSize = true;
+            this.linesection7.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.linesection7.ForeColor = System.Drawing.Color.DimGray;
+            this.linesection7.Location = new System.Drawing.Point(118, 72);
+            this.linesection7.Name = "linesection7";
+            this.linesection7.Size = new System.Drawing.Size(114, 19);
+            this.linesection7.TabIndex = 11;
+            this.linesection7.Text = "SM11-3C (PE)";
+            this.linesection7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Location = new System.Drawing.Point(14, 96);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(400, 1);
+            this.panel1.TabIndex = 10;
+            // 
+            // header7
+            // 
+            this.header7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(206)))), ((int)(((byte)(163)))));
+            this.header7.Controls.Add(this.pictureBox10);
+            this.header7.Controls.Add(this.clockIn7);
+            this.header7.Controls.Add(this.clock7);
+            this.header7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header7.Location = new System.Drawing.Point(14, 14);
+            this.header7.Name = "header7";
+            this.header7.Size = new System.Drawing.Size(402, 54);
+            this.header7.TabIndex = 8;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::CanteenDashboard.Properties.Resources.time_1;
+            this.pictureBox10.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 11;
+            this.pictureBox10.TabStop = false;
+            // 
+            // clockIn7
+            // 
+            this.clockIn7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn7.AutoSize = true;
+            this.clockIn7.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn7.ForeColor = System.Drawing.Color.White;
+            this.clockIn7.Location = new System.Drawing.Point(160, 8);
+            this.clockIn7.Name = "clockIn7";
+            this.clockIn7.Size = new System.Drawing.Size(120, 42);
+            this.clockIn7.TabIndex = 10;
+            this.clockIn7.Text = "08:26";
+            // 
+            // clock7
+            // 
+            this.clock7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.clock7.AutoSize = true;
+            this.clock7.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clock7.ForeColor = System.Drawing.Color.DimGray;
+            this.clock7.Location = new System.Drawing.Point(64, 22);
+            this.clock7.Name = "clock7";
+            this.clock7.Size = new System.Drawing.Size(58, 16);
+            this.clock7.TabIndex = 9;
+            this.clock7.Text = "Clock In";
             // 
             // materialCard3
             // 
@@ -304,12 +428,12 @@ namespace CanteenDashboard
             this.materialCard3.Depth = 0;
             this.materialCard3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(933, 5);
+            this.materialCard3.Location = new System.Drawing.Point(885, 5);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
             this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard3.Size = new System.Drawing.Size(456, 251);
+            this.materialCard3.Size = new System.Drawing.Size(430, 214);
             this.materialCard3.TabIndex = 2;
             // 
             // pictureBox3
@@ -319,7 +443,7 @@ namespace CanteenDashboard
             this.pictureBox3.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox3.Location = new System.Drawing.Point(17, 100);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox3.Size = new System.Drawing.Size(120, 109);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -329,11 +453,11 @@ namespace CanteenDashboard
             this.namePanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel3.AutoSize = true;
-            this.namePanel3.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel3.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel3.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel3.Location = new System.Drawing.Point(140, 101);
             this.namePanel3.Name = "namePanel3";
-            this.namePanel3.Size = new System.Drawing.Size(171, 45);
+            this.namePanel3.Size = new System.Drawing.Size(184, 49);
             this.namePanel3.TabIndex = 13;
             this.namePanel3.Text = "Chika W";
             // 
@@ -367,7 +491,7 @@ namespace CanteenDashboard
             this.panel6.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel6.Location = new System.Drawing.Point(14, 96);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(427, 1);
+            this.panel6.Size = new System.Drawing.Size(401, 1);
             this.panel6.TabIndex = 10;
             // 
             // header3
@@ -379,7 +503,7 @@ namespace CanteenDashboard
             this.header3.Dock = System.Windows.Forms.DockStyle.Top;
             this.header3.Location = new System.Drawing.Point(14, 14);
             this.header3.Name = "header3";
-            this.header3.Size = new System.Drawing.Size(428, 54);
+            this.header3.Size = new System.Drawing.Size(402, 54);
             this.header3.TabIndex = 8;
             // 
             // pictureBox30
@@ -398,7 +522,7 @@ namespace CanteenDashboard
             this.clockIn3.AutoSize = true;
             this.clockIn3.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn3.ForeColor = System.Drawing.Color.White;
-            this.clockIn3.Location = new System.Drawing.Point(188, 7);
+            this.clockIn3.Location = new System.Drawing.Point(162, 7);
             this.clockIn3.Name = "clockIn3";
             this.clockIn3.Size = new System.Drawing.Size(120, 42);
             this.clockIn3.TabIndex = 10;
@@ -410,7 +534,7 @@ namespace CanteenDashboard
             this.clock3.AutoSize = true;
             this.clock3.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock3.ForeColor = System.Drawing.Color.DimGray;
-            this.clock3.Location = new System.Drawing.Point(95, 21);
+            this.clock3.Location = new System.Drawing.Point(69, 21);
             this.clock3.Name = "clock3";
             this.clock3.Size = new System.Drawing.Size(58, 16);
             this.clock3.TabIndex = 9;
@@ -428,12 +552,12 @@ namespace CanteenDashboard
             this.materialCard2.Depth = 0;
             this.materialCard2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(469, 5);
+            this.materialCard2.Location = new System.Drawing.Point(445, 5);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(454, 251);
+            this.materialCard2.Size = new System.Drawing.Size(430, 214);
             this.materialCard2.TabIndex = 1;
             // 
             // pictureBox2
@@ -443,7 +567,7 @@ namespace CanteenDashboard
             this.pictureBox2.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox2.Location = new System.Drawing.Point(17, 100);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox2.Size = new System.Drawing.Size(120, 109);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -453,11 +577,11 @@ namespace CanteenDashboard
             this.namePanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel2.AutoSize = true;
-            this.namePanel2.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel2.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel2.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel2.Location = new System.Drawing.Point(140, 101);
             this.namePanel2.Name = "namePanel2";
-            this.namePanel2.Size = new System.Drawing.Size(117, 45);
+            this.namePanel2.Size = new System.Drawing.Size(128, 49);
             this.namePanel2.TabIndex = 13;
             this.namePanel2.Text = "Excel";
             // 
@@ -491,7 +615,7 @@ namespace CanteenDashboard
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel4.Location = new System.Drawing.Point(14, 96);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(425, 1);
+            this.panel4.Size = new System.Drawing.Size(401, 1);
             this.panel4.TabIndex = 10;
             // 
             // header2
@@ -503,7 +627,7 @@ namespace CanteenDashboard
             this.header2.Dock = System.Windows.Forms.DockStyle.Top;
             this.header2.Location = new System.Drawing.Point(14, 14);
             this.header2.Name = "header2";
-            this.header2.Size = new System.Drawing.Size(426, 54);
+            this.header2.Size = new System.Drawing.Size(402, 54);
             this.header2.TabIndex = 8;
             // 
             // pictureBox29
@@ -522,7 +646,7 @@ namespace CanteenDashboard
             this.clockIn2.AutoSize = true;
             this.clockIn2.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn2.ForeColor = System.Drawing.Color.White;
-            this.clockIn2.Location = new System.Drawing.Point(184, 7);
+            this.clockIn2.Location = new System.Drawing.Point(160, 7);
             this.clockIn2.Name = "clockIn2";
             this.clockIn2.Size = new System.Drawing.Size(120, 42);
             this.clockIn2.TabIndex = 7;
@@ -534,7 +658,7 @@ namespace CanteenDashboard
             this.clock2.AutoSize = true;
             this.clock2.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock2.ForeColor = System.Drawing.Color.DimGray;
-            this.clock2.Location = new System.Drawing.Point(88, 21);
+            this.clock2.Location = new System.Drawing.Point(64, 21);
             this.clock2.Name = "clock2";
             this.clock2.Size = new System.Drawing.Size(58, 16);
             this.clock2.TabIndex = 6;
@@ -557,7 +681,7 @@ namespace CanteenDashboard
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(454, 251);
+            this.materialCard1.Size = new System.Drawing.Size(430, 214);
             this.materialCard1.TabIndex = 0;
             // 
             // pictureBox1
@@ -567,7 +691,7 @@ namespace CanteenDashboard
             this.pictureBox1.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox1.Location = new System.Drawing.Point(17, 102);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox1.Size = new System.Drawing.Size(120, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -577,11 +701,11 @@ namespace CanteenDashboard
             this.namePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel1.AutoSize = true;
-            this.namePanel1.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel1.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel1.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel1.Location = new System.Drawing.Point(140, 101);
             this.namePanel1.Name = "namePanel1";
-            this.namePanel1.Size = new System.Drawing.Size(152, 45);
+            this.namePanel1.Size = new System.Drawing.Size(164, 49);
             this.namePanel1.TabIndex = 7;
             this.namePanel1.Text = "Andrea";
             // 
@@ -615,7 +739,7 @@ namespace CanteenDashboard
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.Location = new System.Drawing.Point(14, 95);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(425, 1);
+            this.panel3.Size = new System.Drawing.Size(401, 1);
             this.panel3.TabIndex = 3;
             // 
             // header1
@@ -627,7 +751,7 @@ namespace CanteenDashboard
             this.header1.Dock = System.Windows.Forms.DockStyle.Top;
             this.header1.Location = new System.Drawing.Point(14, 14);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(426, 54);
+            this.header1.Size = new System.Drawing.Size(402, 54);
             this.header1.TabIndex = 0;
             // 
             // pictureBox28
@@ -646,7 +770,7 @@ namespace CanteenDashboard
             this.clockIn1.AutoSize = true;
             this.clockIn1.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn1.ForeColor = System.Drawing.Color.White;
-            this.clockIn1.Location = new System.Drawing.Point(174, 7);
+            this.clockIn1.Location = new System.Drawing.Point(150, 7);
             this.clockIn1.Name = "clockIn1";
             this.clockIn1.Size = new System.Drawing.Size(120, 42);
             this.clockIn1.TabIndex = 4;
@@ -658,7 +782,7 @@ namespace CanteenDashboard
             this.clock1.AutoSize = true;
             this.clock1.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock1.ForeColor = System.Drawing.Color.DimGray;
-            this.clock1.Location = new System.Drawing.Point(88, 21);
+            this.clock1.Location = new System.Drawing.Point(64, 21);
             this.clock1.Name = "clock1";
             this.clock1.Size = new System.Drawing.Size(58, 16);
             this.clock1.TabIndex = 3;
@@ -671,18 +795,18 @@ namespace CanteenDashboard
             this.materialCard9.Controls.Add(this.namePanel9);
             this.materialCard9.Controls.Add(this.badgeId9);
             this.materialCard9.Controls.Add(this.linesection9);
-            this.materialCard9.Controls.Add(this.panel18);
+            this.materialCard9.Controls.Add(this.panel16);
             this.materialCard9.Controls.Add(this.header9);
             this.materialCard9.Depth = 0;
             this.materialCard9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard9.Location = new System.Drawing.Point(933, 527);
+            this.materialCard9.Location = new System.Drawing.Point(885, 453);
             this.materialCard9.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard9.Name = "materialCard9";
             this.materialCard9.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard9.Size = new System.Drawing.Size(456, 251);
-            this.materialCard9.TabIndex = 8;
+            this.materialCard9.Size = new System.Drawing.Size(430, 215);
+            this.materialCard9.TabIndex = 7;
             // 
             // pictureBox9
             // 
@@ -691,7 +815,7 @@ namespace CanteenDashboard
             this.pictureBox9.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox9.Location = new System.Drawing.Point(17, 100);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox9.Size = new System.Drawing.Size(120, 110);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 9;
             this.pictureBox9.TabStop = false;
@@ -701,13 +825,13 @@ namespace CanteenDashboard
             this.namePanel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel9.AutoSize = true;
-            this.namePanel9.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel9.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel9.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel9.Location = new System.Drawing.Point(140, 101);
             this.namePanel9.Name = "namePanel9";
-            this.namePanel9.Size = new System.Drawing.Size(168, 90);
+            this.namePanel9.Size = new System.Drawing.Size(134, 98);
             this.namePanel9.TabIndex = 13;
-            this.namePanel9.Text = "Budi\r\nHartono";
+            this.namePanel9.Text = "Sekar\r\nAni";
             // 
             // badgeId9
             // 
@@ -725,44 +849,44 @@ namespace CanteenDashboard
             this.linesection9.AutoSize = true;
             this.linesection9.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold);
             this.linesection9.ForeColor = System.Drawing.Color.DimGray;
-            this.linesection9.Location = new System.Drawing.Point(120, 72);
+            this.linesection9.Location = new System.Drawing.Point(118, 72);
             this.linesection9.Name = "linesection9";
             this.linesection9.Size = new System.Drawing.Size(114, 19);
             this.linesection9.TabIndex = 11;
             this.linesection9.Text = "SM11-3C (PE)";
             this.linesection9.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // panel18
+            // panel16
             // 
-            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel18.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel18.Location = new System.Drawing.Point(14, 96);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(427, 1);
-            this.panel18.TabIndex = 10;
+            this.panel16.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel16.Location = new System.Drawing.Point(14, 96);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(400, 1);
+            this.panel16.TabIndex = 10;
             // 
             // header9
             // 
             this.header9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(206)))), ((int)(((byte)(163)))));
-            this.header9.Controls.Add(this.pictureBox36);
+            this.header9.Controls.Add(this.pictureBox35);
             this.header9.Controls.Add(this.clockIn9);
             this.header9.Controls.Add(this.clock9);
             this.header9.Dock = System.Windows.Forms.DockStyle.Top;
             this.header9.Location = new System.Drawing.Point(14, 14);
             this.header9.Name = "header9";
-            this.header9.Size = new System.Drawing.Size(428, 54);
+            this.header9.Size = new System.Drawing.Size(402, 54);
             this.header9.TabIndex = 8;
             // 
-            // pictureBox36
+            // pictureBox35
             // 
-            this.pictureBox36.Image = global::CanteenDashboard.Properties.Resources.time_1;
-            this.pictureBox36.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox36.TabIndex = 14;
-            this.pictureBox36.TabStop = false;
+            this.pictureBox35.Image = global::CanteenDashboard.Properties.Resources.time_1;
+            this.pictureBox35.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox35.TabIndex = 11;
+            this.pictureBox35.TabStop = false;
             // 
             // clockIn9
             // 
@@ -770,10 +894,10 @@ namespace CanteenDashboard
             this.clockIn9.AutoSize = true;
             this.clockIn9.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn9.ForeColor = System.Drawing.Color.White;
-            this.clockIn9.Location = new System.Drawing.Point(188, 10);
+            this.clockIn9.Location = new System.Drawing.Point(160, 8);
             this.clockIn9.Name = "clockIn9";
             this.clockIn9.Size = new System.Drawing.Size(120, 42);
-            this.clockIn9.TabIndex = 13;
+            this.clockIn9.TabIndex = 10;
             this.clockIn9.Text = "08:26";
             // 
             // clock9
@@ -782,10 +906,10 @@ namespace CanteenDashboard
             this.clock9.AutoSize = true;
             this.clock9.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock9.ForeColor = System.Drawing.Color.DimGray;
-            this.clock9.Location = new System.Drawing.Point(95, 22);
+            this.clock9.Location = new System.Drawing.Point(64, 22);
             this.clock9.Name = "clock9";
             this.clock9.Size = new System.Drawing.Size(58, 16);
-            this.clock9.TabIndex = 12;
+            this.clock9.TabIndex = 9;
             this.clock9.Text = "Clock In";
             // 
             // materialCard8
@@ -795,18 +919,18 @@ namespace CanteenDashboard
             this.materialCard8.Controls.Add(this.namePanel8);
             this.materialCard8.Controls.Add(this.badgeId8);
             this.materialCard8.Controls.Add(this.linesection8);
-            this.materialCard8.Controls.Add(this.panel16);
+            this.materialCard8.Controls.Add(this.panel14);
             this.materialCard8.Controls.Add(this.header8);
             this.materialCard8.Depth = 0;
             this.materialCard8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard8.Location = new System.Drawing.Point(469, 527);
+            this.materialCard8.Location = new System.Drawing.Point(445, 453);
             this.materialCard8.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard8.Name = "materialCard8";
             this.materialCard8.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard8.Size = new System.Drawing.Size(454, 251);
-            this.materialCard8.TabIndex = 7;
+            this.materialCard8.Size = new System.Drawing.Size(430, 215);
+            this.materialCard8.TabIndex = 6;
             // 
             // pictureBox8
             // 
@@ -815,7 +939,7 @@ namespace CanteenDashboard
             this.pictureBox8.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox8.Location = new System.Drawing.Point(17, 100);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox8.Size = new System.Drawing.Size(120, 110);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 9;
             this.pictureBox8.TabStop = false;
@@ -825,13 +949,13 @@ namespace CanteenDashboard
             this.namePanel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel8.AutoSize = true;
-            this.namePanel8.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel8.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel8.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel8.Location = new System.Drawing.Point(140, 101);
             this.namePanel8.Name = "namePanel8";
-            this.namePanel8.Size = new System.Drawing.Size(124, 90);
+            this.namePanel8.Size = new System.Drawing.Size(151, 98);
             this.namePanel8.TabIndex = 13;
-            this.namePanel8.Text = "Sekar\r\nAni";
+            this.namePanel8.Text = "Dini\r\nAwalia";
             // 
             // badgeId8
             // 
@@ -849,136 +973,12 @@ namespace CanteenDashboard
             this.linesection8.AutoSize = true;
             this.linesection8.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold);
             this.linesection8.ForeColor = System.Drawing.Color.DimGray;
-            this.linesection8.Location = new System.Drawing.Point(118, 72);
+            this.linesection8.Location = new System.Drawing.Point(119, 72);
             this.linesection8.Name = "linesection8";
             this.linesection8.Size = new System.Drawing.Size(114, 19);
             this.linesection8.TabIndex = 11;
             this.linesection8.Text = "SM11-3C (PE)";
             this.linesection8.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // panel16
-            // 
-            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel16.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel16.Location = new System.Drawing.Point(14, 96);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(424, 1);
-            this.panel16.TabIndex = 10;
-            // 
-            // header8
-            // 
-            this.header8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(206)))), ((int)(((byte)(163)))));
-            this.header8.Controls.Add(this.pictureBox35);
-            this.header8.Controls.Add(this.clockIn8);
-            this.header8.Controls.Add(this.clock8);
-            this.header8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header8.Location = new System.Drawing.Point(14, 14);
-            this.header8.Name = "header8";
-            this.header8.Size = new System.Drawing.Size(426, 54);
-            this.header8.TabIndex = 8;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Image = global::CanteenDashboard.Properties.Resources.time_1;
-            this.pictureBox35.Location = new System.Drawing.Point(30, 10);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox35.TabIndex = 11;
-            this.pictureBox35.TabStop = false;
-            // 
-            // clockIn8
-            // 
-            this.clockIn8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn8.AutoSize = true;
-            this.clockIn8.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn8.ForeColor = System.Drawing.Color.White;
-            this.clockIn8.Location = new System.Drawing.Point(184, 8);
-            this.clockIn8.Name = "clockIn8";
-            this.clockIn8.Size = new System.Drawing.Size(120, 42);
-            this.clockIn8.TabIndex = 10;
-            this.clockIn8.Text = "08:26";
-            // 
-            // clock8
-            // 
-            this.clock8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.clock8.AutoSize = true;
-            this.clock8.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clock8.ForeColor = System.Drawing.Color.DimGray;
-            this.clock8.Location = new System.Drawing.Point(88, 22);
-            this.clock8.Name = "clock8";
-            this.clock8.Size = new System.Drawing.Size(58, 16);
-            this.clock8.TabIndex = 9;
-            this.clock8.Text = "Clock In";
-            // 
-            // materialCard7
-            // 
-            this.materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard7.Controls.Add(this.pictureBox7);
-            this.materialCard7.Controls.Add(this.namePanel7);
-            this.materialCard7.Controls.Add(this.badgeId7);
-            this.materialCard7.Controls.Add(this.linesection7);
-            this.materialCard7.Controls.Add(this.panel14);
-            this.materialCard7.Controls.Add(this.header7);
-            this.materialCard7.Depth = 0;
-            this.materialCard7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard7.Location = new System.Drawing.Point(5, 527);
-            this.materialCard7.Margin = new System.Windows.Forms.Padding(5);
-            this.materialCard7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard7.Name = "materialCard7";
-            this.materialCard7.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard7.Size = new System.Drawing.Size(454, 251);
-            this.materialCard7.TabIndex = 6;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox7.Image = global::CanteenDashboard.Properties.Resources._default;
-            this.pictureBox7.Location = new System.Drawing.Point(17, 100);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(120, 146);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
-            // 
-            // namePanel7
-            // 
-            this.namePanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.namePanel7.AutoSize = true;
-            this.namePanel7.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namePanel7.ForeColor = System.Drawing.Color.DimGray;
-            this.namePanel7.Location = new System.Drawing.Point(140, 101);
-            this.namePanel7.Name = "namePanel7";
-            this.namePanel7.Size = new System.Drawing.Size(138, 90);
-            this.namePanel7.TabIndex = 13;
-            this.namePanel7.Text = "Dini\r\nAwalia";
-            // 
-            // badgeId7
-            // 
-            this.badgeId7.AutoSize = true;
-            this.badgeId7.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.badgeId7.ForeColor = System.Drawing.Color.DimGray;
-            this.badgeId7.Location = new System.Drawing.Point(26, 72);
-            this.badgeId7.Name = "badgeId7";
-            this.badgeId7.Size = new System.Drawing.Size(69, 19);
-            this.badgeId7.TabIndex = 12;
-            this.badgeId7.Text = "039928";
-            // 
-            // linesection7
-            // 
-            this.linesection7.AutoSize = true;
-            this.linesection7.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.linesection7.ForeColor = System.Drawing.Color.DimGray;
-            this.linesection7.Location = new System.Drawing.Point(119, 72);
-            this.linesection7.Name = "linesection7";
-            this.linesection7.Size = new System.Drawing.Size(114, 19);
-            this.linesection7.TabIndex = 11;
-            this.linesection7.Text = "SM11-3C (PE)";
-            this.linesection7.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel14
             // 
@@ -987,20 +987,20 @@ namespace CanteenDashboard
             this.panel14.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel14.Location = new System.Drawing.Point(14, 96);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(425, 1);
+            this.panel14.Size = new System.Drawing.Size(401, 1);
             this.panel14.TabIndex = 10;
             // 
-            // header7
+            // header8
             // 
-            this.header7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(206)))), ((int)(((byte)(163)))));
-            this.header7.Controls.Add(this.pictureBox34);
-            this.header7.Controls.Add(this.clockIn7);
-            this.header7.Controls.Add(this.clock7);
-            this.header7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header7.Location = new System.Drawing.Point(14, 14);
-            this.header7.Name = "header7";
-            this.header7.Size = new System.Drawing.Size(426, 54);
-            this.header7.TabIndex = 8;
+            this.header8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(206)))), ((int)(((byte)(163)))));
+            this.header8.Controls.Add(this.pictureBox34);
+            this.header8.Controls.Add(this.clockIn8);
+            this.header8.Controls.Add(this.clock8);
+            this.header8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header8.Location = new System.Drawing.Point(14, 14);
+            this.header8.Name = "header8";
+            this.header8.Size = new System.Drawing.Size(402, 54);
+            this.header8.TabIndex = 8;
             // 
             // pictureBox34
             // 
@@ -1012,29 +1012,29 @@ namespace CanteenDashboard
             this.pictureBox34.TabIndex = 11;
             this.pictureBox34.TabStop = false;
             // 
-            // clockIn7
+            // clockIn8
             // 
-            this.clockIn7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.clockIn7.AutoSize = true;
-            this.clockIn7.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockIn7.ForeColor = System.Drawing.Color.White;
-            this.clockIn7.Location = new System.Drawing.Point(174, 8);
-            this.clockIn7.Name = "clockIn7";
-            this.clockIn7.Size = new System.Drawing.Size(120, 42);
-            this.clockIn7.TabIndex = 10;
-            this.clockIn7.Text = "08:26";
+            this.clockIn8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.clockIn8.AutoSize = true;
+            this.clockIn8.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clockIn8.ForeColor = System.Drawing.Color.White;
+            this.clockIn8.Location = new System.Drawing.Point(150, 8);
+            this.clockIn8.Name = "clockIn8";
+            this.clockIn8.Size = new System.Drawing.Size(120, 42);
+            this.clockIn8.TabIndex = 10;
+            this.clockIn8.Text = "08:26";
             // 
-            // clock7
+            // clock8
             // 
-            this.clock7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.clock7.AutoSize = true;
-            this.clock7.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clock7.ForeColor = System.Drawing.Color.DimGray;
-            this.clock7.Location = new System.Drawing.Point(88, 22);
-            this.clock7.Name = "clock7";
-            this.clock7.Size = new System.Drawing.Size(58, 16);
-            this.clock7.TabIndex = 9;
-            this.clock7.Text = "Clock In";
+            this.clock8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.clock8.AutoSize = true;
+            this.clock8.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clock8.ForeColor = System.Drawing.Color.DimGray;
+            this.clock8.Location = new System.Drawing.Point(64, 22);
+            this.clock8.Name = "clock8";
+            this.clock8.Size = new System.Drawing.Size(58, 16);
+            this.clock8.TabIndex = 9;
+            this.clock8.Text = "Clock In";
             // 
             // materialCard6
             // 
@@ -1048,12 +1048,12 @@ namespace CanteenDashboard
             this.materialCard6.Depth = 0;
             this.materialCard6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard6.Location = new System.Drawing.Point(933, 266);
+            this.materialCard6.Location = new System.Drawing.Point(885, 229);
             this.materialCard6.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard6.Name = "materialCard6";
             this.materialCard6.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard6.Size = new System.Drawing.Size(456, 251);
+            this.materialCard6.Size = new System.Drawing.Size(430, 214);
             this.materialCard6.TabIndex = 5;
             // 
             // pictureBox6
@@ -1063,7 +1063,7 @@ namespace CanteenDashboard
             this.pictureBox6.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox6.Location = new System.Drawing.Point(17, 100);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox6.Size = new System.Drawing.Size(120, 109);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
@@ -1073,11 +1073,11 @@ namespace CanteenDashboard
             this.namePanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel6.AutoSize = true;
-            this.namePanel6.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel6.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel6.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel6.Location = new System.Drawing.Point(140, 101);
             this.namePanel6.Name = "namePanel6";
-            this.namePanel6.Size = new System.Drawing.Size(112, 45);
+            this.namePanel6.Size = new System.Drawing.Size(122, 49);
             this.namePanel6.TabIndex = 13;
             this.namePanel6.Text = "Fitria";
             // 
@@ -1111,7 +1111,7 @@ namespace CanteenDashboard
             this.panel12.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel12.Location = new System.Drawing.Point(14, 96);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(427, 1);
+            this.panel12.Size = new System.Drawing.Size(401, 1);
             this.panel12.TabIndex = 10;
             // 
             // header6
@@ -1123,7 +1123,7 @@ namespace CanteenDashboard
             this.header6.Dock = System.Windows.Forms.DockStyle.Top;
             this.header6.Location = new System.Drawing.Point(14, 14);
             this.header6.Name = "header6";
-            this.header6.Size = new System.Drawing.Size(428, 54);
+            this.header6.Size = new System.Drawing.Size(402, 54);
             this.header6.TabIndex = 8;
             // 
             // pictureBox33
@@ -1142,7 +1142,7 @@ namespace CanteenDashboard
             this.clockIn6.AutoSize = true;
             this.clockIn6.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn6.ForeColor = System.Drawing.Color.White;
-            this.clockIn6.Location = new System.Drawing.Point(188, 7);
+            this.clockIn6.Location = new System.Drawing.Point(162, 7);
             this.clockIn6.Name = "clockIn6";
             this.clockIn6.Size = new System.Drawing.Size(120, 42);
             this.clockIn6.TabIndex = 10;
@@ -1154,7 +1154,7 @@ namespace CanteenDashboard
             this.clock6.AutoSize = true;
             this.clock6.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock6.ForeColor = System.Drawing.Color.DimGray;
-            this.clock6.Location = new System.Drawing.Point(95, 24);
+            this.clock6.Location = new System.Drawing.Point(69, 24);
             this.clock6.Name = "clock6";
             this.clock6.Size = new System.Drawing.Size(58, 16);
             this.clock6.TabIndex = 9;
@@ -1172,12 +1172,12 @@ namespace CanteenDashboard
             this.materialCard5.Depth = 0;
             this.materialCard5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard5.Location = new System.Drawing.Point(469, 266);
+            this.materialCard5.Location = new System.Drawing.Point(445, 229);
             this.materialCard5.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
             this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard5.Size = new System.Drawing.Size(454, 251);
+            this.materialCard5.Size = new System.Drawing.Size(430, 214);
             this.materialCard5.TabIndex = 4;
             // 
             // pictureBox5
@@ -1187,7 +1187,7 @@ namespace CanteenDashboard
             this.pictureBox5.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox5.Location = new System.Drawing.Point(17, 100);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox5.Size = new System.Drawing.Size(120, 109);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
@@ -1197,11 +1197,11 @@ namespace CanteenDashboard
             this.namePanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel5.AutoSize = true;
-            this.namePanel5.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel5.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel5.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel5.Location = new System.Drawing.Point(140, 101);
             this.namePanel5.Name = "namePanel5";
-            this.namePanel5.Size = new System.Drawing.Size(132, 45);
+            this.namePanel5.Size = new System.Drawing.Size(145, 49);
             this.namePanel5.TabIndex = 13;
             this.namePanel5.Text = "Junita";
             // 
@@ -1235,7 +1235,7 @@ namespace CanteenDashboard
             this.panel10.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel10.Location = new System.Drawing.Point(14, 96);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(425, 1);
+            this.panel10.Size = new System.Drawing.Size(401, 1);
             this.panel10.TabIndex = 10;
             // 
             // header5
@@ -1247,7 +1247,7 @@ namespace CanteenDashboard
             this.header5.Dock = System.Windows.Forms.DockStyle.Top;
             this.header5.Location = new System.Drawing.Point(14, 14);
             this.header5.Name = "header5";
-            this.header5.Size = new System.Drawing.Size(426, 54);
+            this.header5.Size = new System.Drawing.Size(402, 54);
             this.header5.TabIndex = 8;
             // 
             // pictureBox32
@@ -1266,7 +1266,7 @@ namespace CanteenDashboard
             this.clockIn5.AutoSize = true;
             this.clockIn5.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn5.ForeColor = System.Drawing.Color.White;
-            this.clockIn5.Location = new System.Drawing.Point(184, 3);
+            this.clockIn5.Location = new System.Drawing.Point(160, 3);
             this.clockIn5.Name = "clockIn5";
             this.clockIn5.Size = new System.Drawing.Size(120, 42);
             this.clockIn5.TabIndex = 10;
@@ -1278,7 +1278,7 @@ namespace CanteenDashboard
             this.clock5.AutoSize = true;
             this.clock5.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock5.ForeColor = System.Drawing.Color.DimGray;
-            this.clock5.Location = new System.Drawing.Point(88, 22);
+            this.clock5.Location = new System.Drawing.Point(64, 22);
             this.clock5.Name = "clock5";
             this.clock5.Size = new System.Drawing.Size(58, 16);
             this.clock5.TabIndex = 9;
@@ -1296,12 +1296,12 @@ namespace CanteenDashboard
             this.materialCard4.Depth = 0;
             this.materialCard4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(5, 266);
+            this.materialCard4.Location = new System.Drawing.Point(5, 229);
             this.materialCard4.Margin = new System.Windows.Forms.Padding(5);
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
             this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard4.Size = new System.Drawing.Size(454, 251);
+            this.materialCard4.Size = new System.Drawing.Size(430, 214);
             this.materialCard4.TabIndex = 3;
             // 
             // pictureBox4
@@ -1311,7 +1311,7 @@ namespace CanteenDashboard
             this.pictureBox4.Image = global::CanteenDashboard.Properties.Resources._default;
             this.pictureBox4.Location = new System.Drawing.Point(17, 100);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(120, 146);
+            this.pictureBox4.Size = new System.Drawing.Size(120, 109);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
@@ -1321,11 +1321,11 @@ namespace CanteenDashboard
             this.namePanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.namePanel4.AutoSize = true;
-            this.namePanel4.Font = new System.Drawing.Font("Inter", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePanel4.Font = new System.Drawing.Font("Inter", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePanel4.ForeColor = System.Drawing.Color.DimGray;
             this.namePanel4.Location = new System.Drawing.Point(140, 101);
             this.namePanel4.Name = "namePanel4";
-            this.namePanel4.Size = new System.Drawing.Size(109, 90);
+            this.namePanel4.Size = new System.Drawing.Size(118, 98);
             this.namePanel4.TabIndex = 13;
             this.namePanel4.Text = "Ryan\r\nWeh";
             // 
@@ -1359,7 +1359,7 @@ namespace CanteenDashboard
             this.panel8.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel8.Location = new System.Drawing.Point(14, 96);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(424, 1);
+            this.panel8.Size = new System.Drawing.Size(400, 1);
             this.panel8.TabIndex = 10;
             // 
             // header4
@@ -1371,7 +1371,7 @@ namespace CanteenDashboard
             this.header4.Dock = System.Windows.Forms.DockStyle.Top;
             this.header4.Location = new System.Drawing.Point(14, 14);
             this.header4.Name = "header4";
-            this.header4.Size = new System.Drawing.Size(426, 54);
+            this.header4.Size = new System.Drawing.Size(402, 54);
             this.header4.TabIndex = 8;
             // 
             // pictureBox31
@@ -1390,7 +1390,7 @@ namespace CanteenDashboard
             this.clockIn4.AutoSize = true;
             this.clockIn4.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clockIn4.ForeColor = System.Drawing.Color.White;
-            this.clockIn4.Location = new System.Drawing.Point(174, 7);
+            this.clockIn4.Location = new System.Drawing.Point(150, 7);
             this.clockIn4.Name = "clockIn4";
             this.clockIn4.Size = new System.Drawing.Size(120, 42);
             this.clockIn4.TabIndex = 10;
@@ -1402,7 +1402,7 @@ namespace CanteenDashboard
             this.clock4.AutoSize = true;
             this.clock4.Font = new System.Drawing.Font("Inter Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clock4.ForeColor = System.Drawing.Color.DimGray;
-            this.clock4.Location = new System.Drawing.Point(88, 22);
+            this.clock4.Location = new System.Drawing.Point(64, 22);
             this.clock4.Name = "clock4";
             this.clock4.Size = new System.Drawing.Size(58, 16);
             this.clock4.TabIndex = 9;
@@ -1412,7 +1412,7 @@ namespace CanteenDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 878);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.ContextMenuStrip = this.contextMenuStrip;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panelHeader);
@@ -1422,7 +1422,7 @@ namespace CanteenDashboard
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DashboardNine";
-            this.Text = "Netraya Canteen";
+            this.Text = "Canteen Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelHeader.ResumeLayout(false);
@@ -1430,6 +1430,12 @@ namespace CanteenDashboard
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).EndInit();
             this.contextMenuStrip.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.materialCard7.ResumeLayout(false);
+            this.materialCard7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.header7.ResumeLayout(false);
+            this.header7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.materialCard3.ResumeLayout(false);
             this.materialCard3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1453,18 +1459,12 @@ namespace CanteenDashboard
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.header9.ResumeLayout(false);
             this.header9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             this.materialCard8.ResumeLayout(false);
             this.materialCard8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.header8.ResumeLayout(false);
             this.header8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            this.materialCard7.ResumeLayout(false);
-            this.materialCard7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.header7.ResumeLayout(false);
-            this.header7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             this.materialCard6.ResumeLayout(false);
             this.materialCard6.PerformLayout();
@@ -1498,9 +1498,7 @@ namespace CanteenDashboard
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MaterialSkin.Controls.MaterialCard materialCard1;
-        private MaterialSkin.Controls.MaterialCard materialCard9;
         private MaterialSkin.Controls.MaterialCard materialCard8;
-        private MaterialSkin.Controls.MaterialCard materialCard7;
         private MaterialSkin.Controls.MaterialCard materialCard6;
         private MaterialSkin.Controls.MaterialCard materialCard5;
         private MaterialSkin.Controls.MaterialCard materialCard4;
@@ -1514,24 +1512,12 @@ namespace CanteenDashboard
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label namePanel1;
         private System.Windows.Forms.Label badgeId1;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label namePanel9;
-        private System.Windows.Forms.Label badgeId9;
-        private System.Windows.Forms.Label linesection9;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel header9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label namePanel8;
         private System.Windows.Forms.Label badgeId8;
         private System.Windows.Forms.Label linesection8;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel header8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label namePanel7;
-        private System.Windows.Forms.Label badgeId7;
-        private System.Windows.Forms.Label linesection7;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel header7;
+        private System.Windows.Forms.Panel header8;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label namePanel6;
         private System.Windows.Forms.Label badgeId6;
@@ -1566,15 +1552,9 @@ namespace CanteenDashboard
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.Label clockIn2;
         private System.Windows.Forms.Label clock2;
-        private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.Label clockIn9;
-        private System.Windows.Forms.Label clock9;
-        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.Label clockIn8;
         private System.Windows.Forms.Label clock8;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.Label clockIn7;
-        private System.Windows.Forms.Label clock7;
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.Label clockIn6;
         private System.Windows.Forms.Label clock6;
@@ -1590,6 +1570,26 @@ namespace CanteenDashboard
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mainToolStripMenuItem;
         public MaterialSkin.Controls.MaterialLabel roomtb;
+        private MaterialSkin.Controls.MaterialCard materialCard7;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label namePanel7;
+        private System.Windows.Forms.Label badgeId7;
+        private System.Windows.Forms.Label linesection7;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel header7;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label clockIn7;
+        private System.Windows.Forms.Label clock7;
+        private MaterialSkin.Controls.MaterialCard materialCard9;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label namePanel9;
+        private System.Windows.Forms.Label badgeId9;
+        private System.Windows.Forms.Label linesection9;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel header9;
+        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.Label clockIn9;
+        private System.Windows.Forms.Label clock9;
     }
 }
 
